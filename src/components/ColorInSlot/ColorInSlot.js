@@ -1,5 +1,5 @@
 "use client";
-import React, { memo, useCallback } from "react";
+import React, { memo, useCallback, useState } from "react";
 import { X } from "lucide-react";
 import { useColorPaletteContext } from "@/context/ColorPaletteContext";
 
@@ -11,6 +11,8 @@ const ColorInSlot = memo(function ColorInSlot({
   onDragStart,
 }) {
   const { dispatch, ACTION_TYPES } = useColorPaletteContext();
+  const [isDragOver, setIsDragOver] = useState(false);
+  const [dragPosition, setDragPosition] = useState("center");
 
   // Seleccionar color para la combinación
   const handleColorClick = useCallback(() => {
@@ -32,11 +34,47 @@ const ColorInSlot = memo(function ColorInSlot({
     [dispatch, ACTION_TYPES, slotIndex, color.code]
   );
 
-  // Manejar drop para reordenamiento
+  // Manejar drag over con detección de posición
+  const handleDragOver = useCallback((e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const rect = e.currentTarget.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+    const elementWidth = rect.width;
+
+    // Determinar si está en la mitad izquierda o derecha
+    if (mouseX < elementWidth / 2) {
+      setDragPosition("left");
+    } else {
+      setDragPosition("right");
+    }
+
+    setIsDragOver(true);
+    e.dataTransfer.dropEffect = "move";
+  }, []);
+
+  const handleDragEnter = useCallback((e) => {
+    e.preventDefault();
+    setIsDragOver(true);
+  }, []);
+
+  const handleDragLeave = useCallback((e) => {
+    // Solo remover el estado si realmente salimos del elemento
+    if (!e.currentTarget.contains(e.relatedTarget)) {
+      setIsDragOver(false);
+      setDragPosition("center");
+    }
+  }, []);
+
+  // Manejar drop con lógica mejorada
   const handleDrop = useCallback(
     (e) => {
       e.preventDefault();
       e.stopPropagation();
+
+      setIsDragOver(false);
+      setDragPosition("center");
 
       try {
         const dataString = e.dataTransfer.getData("application/json");
@@ -52,27 +90,47 @@ const ColorInSlot = memo(function ColorInSlot({
 
           // Caso 1: Reordenar dentro del mismo slot
           if (sourceSlotIndex === slotIndex) {
-            // Solo si no es la misma posición
             if (sourceColorIndex !== colorIndex) {
+              // Calcular la posición final basada en dónde se soltó
+              let finalTargetIndex = colorIndex;
+
+              if (dragPosition === "left") {
+                // Insertar antes del elemento actual
+                finalTargetIndex = colorIndex;
+              } else {
+                // Insertar después del elemento actual
+                finalTargetIndex = colorIndex + 1;
+              }
+
+              // Ajustar si el elemento viene de antes
+              if (sourceColorIndex < finalTargetIndex) {
+                finalTargetIndex = finalTargetIndex - 1;
+              }
+
               dispatch({
                 type: ACTION_TYPES.REORDER_COLORS_IN_SLOT,
                 payload: {
                   slotIndex,
                   sourceColorIndex,
-                  targetColorIndex: colorIndex,
+                  targetColorIndex: finalTargetIndex,
                 },
               });
             }
           }
           // Caso 2: Mover entre slots diferentes
           else {
+            let finalTargetIndex = colorIndex;
+            if (dragPosition === "right") {
+              finalTargetIndex = colorIndex + 1;
+            }
+
             dispatch({
               type: ACTION_TYPES.MOVE_COLOR_BETWEEN_SLOTS,
               payload: {
                 sourceSlotIndex,
                 sourceColorIndex,
                 targetSlotIndex: slotIndex,
-                targetColorIndex: colorIndex,
+                targetColorIndex: finalTargetIndex,
                 color: sourceColor,
               },
             });
@@ -82,25 +140,28 @@ const ColorInSlot = memo(function ColorInSlot({
         console.error("Error al procesar drop en color:", error);
       }
     },
-    [dispatch, ACTION_TYPES, slotIndex, colorIndex]
+    [dispatch, ACTION_TYPES, slotIndex, colorIndex, dragPosition]
   );
-
-  // Mejorar la zona de drop
-  const handleDragOver = useCallback((e) => {
-    e.preventDefault();
-    e.stopPropagation();
-
-    // Agregar efecto visual para mejor UX
-    e.dataTransfer.dropEffect = "move";
-  }, []);
 
   return (
     <div
-      className="w-[100px] relative rounded-md overflow-hidden cursor-pointer border border-gray-700 mb-2 transition-all duration-150"
+      className={`w-[100px] relative rounded-md overflow-hidden cursor-pointer border transition-all duration-150 ${
+        isDragOver
+          ? `border-blue-400 ${
+              dragPosition === "left"
+                ? "border-l-4"
+                : dragPosition === "right"
+                ? "border-r-4"
+                : "border-2"
+            }`
+          : "border-gray-700"
+      } mb-2`}
       onClick={handleColorClick}
       draggable
       onDragStart={(e) => onDragStart(e, slotIndex, colorIndex, color)}
       onDragOver={handleDragOver}
+      onDragEnter={handleDragEnter}
+      onDragLeave={handleDragLeave}
       onDrop={handleDrop}
       style={{
         transform: isSelected ? "scale(0.98)" : "scale(1)",
@@ -131,6 +192,15 @@ const ColorInSlot = memo(function ColorInSlot({
       </button>
       {isSelected && (
         <div className="absolute inset-0 border-2 border-yellow-400 pointer-events-none rounded-md"></div>
+      )}
+
+      {/* Indicador visual de posición durante drag */}
+      {isDragOver && (
+        <div
+          className={`absolute top-0 w-1 h-full bg-blue-400 ${
+            dragPosition === "left" ? "left-0" : "right-0"
+          }`}
+        ></div>
       )}
     </div>
   );

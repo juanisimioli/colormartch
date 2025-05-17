@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useCallback } from "react";
-import { Trash2 } from "lucide-react";
+import React, { useState, useCallback, useEffect } from "react";
+import { Trash2, ChevronDown, ChevronUp } from "lucide-react";
 import { useColorPaletteContext } from "@/context/ColorPaletteContext";
 import ColorInSlot from "../ColorInSlot/ColorInSlot";
 import ConfirmModal from "../ConfirmModal/ConfirmModal";
@@ -10,16 +10,60 @@ export default function Slot({ slot, slotIndex, isDragOver }) {
     useColorPaletteContext();
   const { dragOverSlotIndex } = state;
   const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
-  // Renombrar slot con debounce implícito
-  const handleRenameSlot = useCallback(
-    (e) => {
+  // Estado local para el nombre del slot
+  const [localName, setLocalName] = useState(slot.name);
+  const [isEditing, setIsEditing] = useState(false);
+
+  // Sincronizar el estado local cuando cambia el prop
+  useEffect(() => {
+    setLocalName(slot.name);
+  }, [slot.name]);
+
+  // Manejar cambio en el input (solo estado local)
+  const handleNameChange = useCallback((e) => {
+    setLocalName(e.target.value);
+  }, []);
+
+  // Iniciar edición
+  const handleStartEdit = useCallback(() => {
+    setIsEditing(true);
+    setLocalName(slot.name);
+  }, [slot.name]);
+
+  // Confirmar cambios (commit al store)
+  const handleCommitChanges = useCallback(() => {
+    if (localName.trim() && localName !== slot.name) {
       dispatch({
         type: ACTION_TYPES.RENAME_SLOT,
-        payload: { index: slotIndex, newName: e.target.value },
+        payload: { index: slotIndex, newName: localName.trim() },
       });
+    } else {
+      // Si no hay cambios válidos, revertir
+      setLocalName(slot.name);
+    }
+    setIsEditing(false);
+  }, [dispatch, ACTION_TYPES, slotIndex, localName, slot.name]);
+
+  // Cancelar edición
+  const handleCancelEdit = useCallback(() => {
+    setLocalName(slot.name);
+    setIsEditing(false);
+  }, [slot.name]);
+
+  // Manejar teclas especiales
+  const handleKeyDown = useCallback(
+    (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        handleCommitChanges();
+      } else if (e.key === "Escape") {
+        e.preventDefault();
+        handleCancelEdit();
+      }
     },
-    [dispatch, ACTION_TYPES, slotIndex]
+    [handleCommitChanges, handleCancelEdit]
   );
 
   // Eliminar slot con confirmación
@@ -30,10 +74,12 @@ export default function Slot({ slot, slotIndex, isDragOver }) {
     });
   };
 
-  // Manejar drag over
+  // Manejar drag over - SOLO en el área del slot
   const handleDragOver = useCallback(
     (e) => {
       e.preventDefault();
+      e.stopPropagation(); // Evitar que se propague al área de drop padre
+
       if (dragOverSlotIndex !== slotIndex) {
         dispatch({
           type: ACTION_TYPES.SET_DRAG_OVER_SLOT_INDEX,
@@ -45,17 +91,25 @@ export default function Slot({ slot, slotIndex, isDragOver }) {
   );
 
   // Manejar drag leave
-  const handleDragLeave = useCallback(() => {
-    dispatch({
-      type: ACTION_TYPES.SET_DRAG_OVER_SLOT_INDEX,
-      payload: null,
-    });
-  }, [dispatch, ACTION_TYPES]);
+  const handleDragLeave = useCallback(
+    (e) => {
+      // Solo resetear si realmente salimos del slot
+      if (!e.currentTarget.contains(e.relatedTarget)) {
+        dispatch({
+          type: ACTION_TYPES.SET_DRAG_OVER_SLOT_INDEX,
+          payload: null,
+        });
+      }
+    },
+    [dispatch, ACTION_TYPES]
+  );
 
-  // Manejar drop
+  // Manejar drop - SOLO en el área del slot
   const handleDrop = useCallback(
     (e) => {
       e.preventDefault();
+      e.stopPropagation(); // IMPORTANTE: evitar que se propague al área padre
+
       dispatch({
         type: ACTION_TYPES.SET_DRAG_OVER_SLOT_INDEX,
         payload: null,
@@ -119,48 +173,77 @@ export default function Slot({ slot, slotIndex, isDragOver }) {
   return (
     <>
       <div
-        className={`p-3 rounded-md ${
+        className={`rounded-md ${
           isDragOver
             ? "bg-gray-700 border border-dashed border-gray-400"
             : "bg-gray-800"
-        } transition-colors duration-200`}
+        } transition-colors duration-200 overflow-hidden`}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
       >
-        <div className="flex justify-between items-center mb-2">
-          <div className="flex items-center gap-2 flex-1">
-            <input
-              type="text"
-              value={slot.name}
-              onChange={handleRenameSlot}
-              className="bg-transparent border-b border-gray-600 focus:border-gray-500 focus:outline-none px-1 flex-1"
-            />
-            <span className="text-sm text-gray-400 whitespace-nowrap">
-              ({slot.colors.length} colores)
-            </span>
+        {/* Header del slot - colapsable */}
+        <div
+          className="p-3 cursor-pointer hover:bg-gray-750"
+          onClick={() => !isEditing && setIsCollapsed(!isCollapsed)}
+        >
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-2 flex-1">
+              <input
+                type="text"
+                value={localName}
+                onChange={handleNameChange}
+                onBlur={handleCommitChanges}
+                onFocus={handleStartEdit}
+                onKeyDown={handleKeyDown}
+                className={`bg-transparent border-b px-1 flex-1 transition-colors ${
+                  isEditing
+                    ? "border-blue-500 text-white"
+                    : "border-gray-600 hover:border-gray-500"
+                } focus:border-blue-500 focus:outline-none`}
+                onClick={(e) => e.stopPropagation()} // Evitar que se colapse al editar
+                placeholder="Nombre del slot"
+              />
+              <span className="text-sm text-gray-400 whitespace-nowrap">
+                ({slot.colors.length} colores)
+              </span>
+              <div className="flex items-center gap-1 ml-2">
+                {isCollapsed ? (
+                  <ChevronDown size={16} />
+                ) : (
+                  <ChevronUp size={16} />
+                )}
+              </div>
+            </div>
+            <button
+              className="p-1 text-gray-400 hover:text-red-500 ml-2 transition-colors"
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowDeleteModal(true);
+              }}
+            >
+              <Trash2 size={16} />
+            </button>
           </div>
-          <button
-            className="p-1 text-gray-400 hover:text-red-500 ml-2"
-            onClick={() => setShowDeleteModal(true)}
-          >
-            <Trash2 size={16} />
-          </button>
         </div>
 
-        {/* Colores en el slot */}
-        <div className="flex flex-wrap gap-2">
-          {slot.colors.map((color, colorIndex) => (
-            <ColorInSlot
-              key={`slot-${slotIndex}-color-${colorIndex}`}
-              slotIndex={slotIndex}
-              colorIndex={colorIndex}
-              color={color}
-              isSelected={isColorSelected(slotIndex, color)}
-              onDragStart={handleColorDragStart}
-            />
-          ))}
-        </div>
+        {/* Colores en el slot - colapsable */}
+        {!isCollapsed && (
+          <div className="px-3 pb-3">
+            <div className="flex flex-wrap gap-2">
+              {slot.colors.map((color, colorIndex) => (
+                <ColorInSlot
+                  key={`slot-${slotIndex}-color-${colorIndex}-${color.code}`}
+                  slotIndex={slotIndex}
+                  colorIndex={colorIndex}
+                  color={color}
+                  isSelected={isColorSelected(slotIndex, color)}
+                  onDragStart={handleColorDragStart}
+                />
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       <ConfirmModal

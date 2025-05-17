@@ -263,16 +263,26 @@ function colorPaletteReducer(state, action) {
       if (sourceColorIndex === targetColorIndex) return state;
 
       const newSlots = JSON.parse(JSON.stringify(currentCombination.slots));
+
+      // Verificar que los índices sean válidos
+      if (
+        sourceColorIndex < 0 ||
+        sourceColorIndex >= newSlots[slotIndex].colors.length
+      ) {
+        return state;
+      }
+
+      // Extraer el color a mover
       const [removedColor] = newSlots[slotIndex].colors.splice(
         sourceColorIndex,
         1
       );
 
-      // Calcular el índice de destino correcto después de la eliminación
-      let finalTargetIndex = targetColorIndex;
-      if (sourceColorIndex < targetColorIndex) {
-        finalTargetIndex = Math.max(0, targetColorIndex - 1);
-      }
+      // Calcular la posición final
+      const finalTargetIndex = Math.min(
+        Math.max(0, targetColorIndex),
+        newSlots[slotIndex].colors.length
+      );
 
       // Insertar en la nueva posición
       newSlots[slotIndex].colors.splice(finalTargetIndex, 0, removedColor);
