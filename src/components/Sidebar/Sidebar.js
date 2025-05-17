@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { useColorPaletteContext } from "@/context/ColorPaletteContext";
 import { useResizable } from "@/hooks/useResizable";
+import { allAlbaColors } from "@/albaColors/helper";
 import FavoritesList from "../FavoritesList/FavoritesList";
 import ColorCard from "../ColorCard/ColorCard";
 
@@ -20,9 +21,14 @@ export default function Sidebar() {
     sidebarWidth,
     filteredColors,
     favorites,
-    selectedSlotIndex,
     searchTerm,
+    combinations,
+    activeCombinationIndex,
   } = state;
+
+  // Obtener la combinación activa
+  const currentCombination = combinations[activeCombinationIndex];
+  const selectedSlotIndex = currentCombination?.selectedSlotIndex;
 
   // Referencia para el resize del sidebar
   const resizeRef = useRef(null);
@@ -145,7 +151,14 @@ export default function Sidebar() {
             {/* Catálogo de Colores - toma todo el espacio restante */}
             <div className="flex flex-col flex-grow overflow-hidden">
               <div className="flex justify-between items-center mb-2 flex-shrink-0">
-                <h2 className="font-bold text-lg">Todos los Colores</h2>
+                <div className="flex flex-col">
+                  <h2 className="font-bold text-lg">Todos los Colores</h2>
+                  <span className="text-sm text-gray-400">
+                    {searchTerm
+                      ? `${filteredColors.length} de ${allAlbaColors.length} colores`
+                      : `${filteredColors.length} colores`}
+                  </span>
+                </div>
                 <button
                   className="p-1 text-gray-300 hover:text-white rounded"
                   onClick={toggleFullScreen}

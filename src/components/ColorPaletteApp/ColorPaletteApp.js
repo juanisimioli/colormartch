@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import Sidebar from "../Sidebar/Sidebar";
 import SlotsList from "../SlotList/SlotList";
 import Combination from "../Combination/Combination";
+import CombinationManager from "../CombinationManager/CombinationManager";
 import { useColorPaletteContext } from "@/context/ColorPaletteContext";
 
 const scrollbarStyles = `
@@ -31,7 +32,11 @@ const scrollbarStyles = `
 // Componente interno que accede al contexto
 function ColorPaletteContent() {
   const { state } = useColorPaletteContext();
-  const { selectedColors, fullScreenMode } = state;
+  const { combinations, activeCombinationIndex, fullScreenMode } = state;
+
+  // Obtener la combinación activa
+  const currentCombination = combinations[activeCombinationIndex];
+  const selectedColors = currentCombination?.selectedColors || [];
 
   return (
     <div className="flex flex-col h-screen bg-gray-900 text-white">
@@ -45,10 +50,13 @@ function ColorPaletteContent() {
         {/* Sidebar - Colapsable con ancho ajustable */}
         <Sidebar />
 
-        {/* Main content - Slots y Combinaciones - Solo visible si no está en modo pantalla completa */}
+        {/* Main content - Solo visible si no está en modo pantalla completa */}
         {!fullScreenMode && (
           <div className="flex-1 p-4 flex flex-col h-full">
-            {/* Mi Combinación - Arriba, siempre visible */}
+            {/* Gestión de Combinaciones */}
+            <CombinationManager />
+
+            {/* Combinación actual - Visible si tiene colores seleccionados */}
             {selectedColors.length > 0 && <Combination />}
 
             {/* Sección de Slots */}

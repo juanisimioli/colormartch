@@ -6,7 +6,16 @@ import Slot from "../Slot/Slot";
 
 export default function SlotsList() {
   const { state, dispatch, ACTION_TYPES } = useColorPaletteContext();
-  const { slots, slotsExpanded, dragOverSlotIndex } = state;
+  const {
+    combinations,
+    activeCombinationIndex,
+    slotsExpanded,
+    dragOverSlotIndex,
+  } = state;
+
+  // Obtener la combinación activa
+  const currentCombination = combinations[activeCombinationIndex];
+  const slots = currentCombination?.slots || [];
 
   // Toggle expansión de slots
   const toggleSlotsExpanded = () => {

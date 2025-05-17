@@ -4,12 +4,19 @@ import { allAlbaColors } from "@/albaColors/helper";
 
 const ColorPaletteContext = createContext();
 
-// Estado inicial
+// Estado inicial con soporte para múltiples combinaciones
 const initialState = {
   favorites: [],
-  slots: [],
-  selectedSlotIndex: null,
-  selectedColors: [],
+  combinations: [
+    {
+      id: 1,
+      name: "Combinación 1",
+      slots: [],
+      selectedSlotIndex: null,
+      selectedColors: [], // Colores de la combinación final
+    },
+  ],
+  activeCombinationIndex: 0, // Índice de la combinación activa
   searchTerm: "",
   filteredColors: allAlbaColors,
   sidebarCollapsed: false,
@@ -20,11 +27,19 @@ const initialState = {
   dragOverSlotIndex: null,
 };
 
-// Tipos de acciones
+// Tipos de acciones actualizados
 const ACTION_TYPES = {
   SET_FAVORITES: "SET_FAVORITES",
   TOGGLE_FAVORITE: "TOGGLE_FAVORITE",
-  SET_SLOTS: "SET_SLOTS",
+
+  // Gestión de combinaciones
+  SET_COMBINATIONS: "SET_COMBINATIONS",
+  CREATE_COMBINATION: "CREATE_COMBINATION",
+  DELETE_COMBINATION: "DELETE_COMBINATION",
+  RENAME_COMBINATION: "RENAME_COMBINATION",
+  SET_ACTIVE_COMBINATION: "SET_ACTIVE_COMBINATION",
+
+  // Gestión de slots (ahora por combinación)
   CREATE_SLOT: "CREATE_SLOT",
   RENAME_SLOT: "RENAME_SLOT",
   DELETE_SLOT: "DELETE_SLOT",
@@ -33,10 +48,13 @@ const ACTION_TYPES = {
   REMOVE_COLOR_FROM_SLOT: "REMOVE_COLOR_FROM_SLOT",
   REORDER_COLORS_IN_SLOT: "REORDER_COLORS_IN_SLOT",
   MOVE_COLOR_BETWEEN_SLOTS: "MOVE_COLOR_BETWEEN_SLOTS",
-  SET_SELECTED_COLORS: "SET_SELECTED_COLORS",
+
+  // Gestión de colores seleccionados (ahora por combinación)
   SELECT_COLOR_FOR_COMBINATION: "SELECT_COLOR_FOR_COMBINATION",
   REMOVE_COLOR_FROM_COMBINATION: "REMOVE_COLOR_FROM_COMBINATION",
   REORDER_COMBINATION_COLORS: "REORDER_COMBINATION_COLORS",
+
+  // UI State
   SET_SEARCH_TERM: "SET_SEARCH_TERM",
   SET_FILTERED_COLORS: "SET_FILTERED_COLORS",
   SET_SIDEBAR_COLLAPSED: "SET_SIDEBAR_COLLAPSED",
@@ -47,7 +65,22 @@ const ACTION_TYPES = {
   SET_DRAG_OVER_SLOT_INDEX: "SET_DRAG_OVER_SLOT_INDEX",
 };
 
+// Helper functions
+const getCurrentCombination = (state) =>
+  state.combinations[state.activeCombinationIndex];
+
+const updateCurrentCombination = (state, updates) => {
+  const newCombinations = [...state.combinations];
+  newCombinations[state.activeCombinationIndex] = {
+    ...newCombinations[state.activeCombinationIndex],
+    ...updates,
+  };
+  return { ...state, combinations: newCombinations };
+};
+
 function colorPaletteReducer(state, action) {
+  const currentCombination = getCurrentCombination(state);
+
   switch (action.type) {
     case ACTION_TYPES.SET_FAVORITES:
       return { ...state, favorites: action.payload };
@@ -71,37 +104,86 @@ function colorPaletteReducer(state, action) {
       }
     }
 
-    case ACTION_TYPES.SET_SLOTS:
-      return { ...state, slots: action.payload };
+    // Gestión de combinaciones
+    case ACTION_TYPES.SET_COMBINATIONS:
+      return { ...state, combinations: action.payload };
 
-    case ACTION_TYPES.CREATE_SLOT: {
-      const newSlot = {
-        name: `Slot ${state.slots.length + 1}`,
-        colors: [],
+    case ACTION_TYPES.CREATE_COMBINATION: {
+      const newCombination = {
+        id: Date.now(),
+        name: `Combinación ${state.combinations.length + 1}`,
+        slots: [],
+        selectedSlotIndex: null,
+        selectedColors: [],
       };
       return {
         ...state,
-        slots: [...state.slots, newSlot],
+        combinations: [...state.combinations, newCombination],
+        activeCombinationIndex: state.combinations.length,
       };
+    }
+
+    case ACTION_TYPES.DELETE_COMBINATION: {
+      const combinationIndex = action.payload;
+      if (state.combinations.length <= 1) return state; // No eliminar la última combinación
+
+      const newCombinations = state.combinations.filter(
+        (_, i) => i !== combinationIndex
+      );
+      let newActiveIndex = state.activeCombinationIndex;
+
+      if (combinationIndex === state.activeCombinationIndex) {
+        newActiveIndex = Math.max(0, combinationIndex - 1);
+      } else if (combinationIndex < state.activeCombinationIndex) {
+        newActiveIndex = state.activeCombinationIndex - 1;
+      }
+
+      return {
+        ...state,
+        combinations: newCombinations,
+        activeCombinationIndex: newActiveIndex,
+      };
+    }
+
+    case ACTION_TYPES.RENAME_COMBINATION: {
+      const { index, newName } = action.payload;
+      const newCombinations = [...state.combinations];
+      newCombinations[index].name = newName;
+      return {
+        ...state,
+        combinations: newCombinations,
+      };
+    }
+
+    case ACTION_TYPES.SET_ACTIVE_COMBINATION:
+      return { ...state, activeCombinationIndex: action.payload };
+
+    // Gestión de slots
+    case ACTION_TYPES.CREATE_SLOT: {
+      const newSlot = {
+        name: `Slot ${currentCombination.slots.length + 1}`,
+        colors: [],
+      };
+      return updateCurrentCombination(state, {
+        slots: [...currentCombination.slots, newSlot],
+      });
     }
 
     case ACTION_TYPES.RENAME_SLOT: {
       const { index, newName } = action.payload;
-      const updatedSlots = [...state.slots];
+      const updatedSlots = [...currentCombination.slots];
       updatedSlots[index].name = newName;
-      return {
-        ...state,
-        slots: updatedSlots,
-      };
+      return updateCurrentCombination(state, { slots: updatedSlots });
     }
 
     case ACTION_TYPES.DELETE_SLOT: {
       const slotIndex = action.payload;
-      // Filtrar los slots
-      const newSlots = state.slots.filter((_, i) => i !== slotIndex);
+      const newSlots = currentCombination.slots.filter(
+        (_, i) => i !== slotIndex
+      );
 
       // Actualizar selecciones
-      const newSelectedColors = state.selectedColors
+      const newSelectedColors = currentCombination.selectedColors
         .filter((item) => item.slotIndex !== slotIndex)
         .map((item) => {
           if (item.slotIndex > slotIndex) {
@@ -110,28 +192,29 @@ function colorPaletteReducer(state, action) {
           return item;
         });
 
-      return {
-        ...state,
+      return updateCurrentCombination(state, {
         slots: newSlots,
         selectedColors: newSelectedColors,
         selectedSlotIndex:
-          state.selectedSlotIndex === slotIndex
+          currentCombination.selectedSlotIndex === slotIndex
             ? null
-            : state.selectedSlotIndex > slotIndex
-            ? state.selectedSlotIndex - 1
-            : state.selectedSlotIndex,
-      };
+            : currentCombination.selectedSlotIndex > slotIndex
+            ? currentCombination.selectedSlotIndex - 1
+            : currentCombination.selectedSlotIndex,
+      });
     }
 
     case ACTION_TYPES.SET_SELECTED_SLOT_INDEX:
-      return { ...state, selectedSlotIndex: action.payload };
+      return updateCurrentCombination(state, {
+        selectedSlotIndex: action.payload,
+      });
 
     case ACTION_TYPES.ADD_COLOR_TO_SLOT: {
       const { slotIndex, color } = action.payload;
 
       if (slotIndex === null) return state;
 
-      const updatedSlots = [...state.slots];
+      const updatedSlots = [...currentCombination.slots];
       const existingColorIndex = updatedSlots[slotIndex].colors.findIndex(
         (c) => c.code === color.code
       );
@@ -142,31 +225,27 @@ function colorPaletteReducer(state, action) {
       // Añadir el color al final
       updatedSlots[slotIndex].colors.push({ ...color });
 
-      return {
-        ...state,
-        slots: updatedSlots,
-      };
+      return updateCurrentCombination(state, { slots: updatedSlots });
     }
 
     case ACTION_TYPES.REMOVE_COLOR_FROM_SLOT: {
       const { slotIndex, colorCode } = action.payload;
 
-      const updatedSlots = [...state.slots];
+      const updatedSlots = [...currentCombination.slots];
       updatedSlots[slotIndex].colors = updatedSlots[slotIndex].colors.filter(
         (color) => color.code !== colorCode
       );
 
       // Si este color estaba seleccionado, eliminar la selección
-      const updatedSelectedColors = state.selectedColors.filter(
+      const updatedSelectedColors = currentCombination.selectedColors.filter(
         (item) =>
           !(item.slotIndex === slotIndex && item.color.code === colorCode)
       );
 
-      return {
-        ...state,
+      return updateCurrentCombination(state, {
         slots: updatedSlots,
         selectedColors: updatedSelectedColors,
-      };
+      });
     }
 
     case ACTION_TYPES.REORDER_COLORS_IN_SLOT: {
@@ -175,7 +254,7 @@ function colorPaletteReducer(state, action) {
       // Ignorar si es la misma posición
       if (sourceColorIndex === targetColorIndex) return state;
 
-      const newSlots = JSON.parse(JSON.stringify(state.slots));
+      const newSlots = JSON.parse(JSON.stringify(currentCombination.slots));
       const [removedColor] = newSlots[slotIndex].colors.splice(
         sourceColorIndex,
         1
@@ -190,10 +269,7 @@ function colorPaletteReducer(state, action) {
       // Insertar en la nueva posición
       newSlots[slotIndex].colors.splice(finalTargetIndex, 0, removedColor);
 
-      return {
-        ...state,
-        slots: newSlots,
-      };
+      return updateCurrentCombination(state, { slots: newSlots });
     }
 
     case ACTION_TYPES.MOVE_COLOR_BETWEEN_SLOTS: {
@@ -209,7 +285,7 @@ function colorPaletteReducer(state, action) {
       if (sourceSlotIndex === targetSlotIndex) return state;
 
       // Crear copia profunda de todos los slots
-      const newSlots = JSON.parse(JSON.stringify(state.slots));
+      const newSlots = JSON.parse(JSON.stringify(currentCombination.slots));
 
       // Verificar que el color aún existe en la posición esperada
       if (
@@ -245,7 +321,7 @@ function colorPaletteReducer(state, action) {
       }
 
       // Actualizar la selección
-      let updatedSelectedColors = [...state.selectedColors];
+      let updatedSelectedColors = [...currentCombination.selectedColors];
       const selectionIndex = updatedSelectedColors.findIndex(
         (item) =>
           item.slotIndex === sourceSlotIndex && item.color.code === color.code
@@ -269,49 +345,46 @@ function colorPaletteReducer(state, action) {
         }
       }
 
-      return {
-        ...state,
+      return updateCurrentCombination(state, {
         slots: newSlots,
         selectedColors: updatedSelectedColors,
-      };
+      });
     }
-
-    case ACTION_TYPES.SET_SELECTED_COLORS:
-      return { ...state, selectedColors: action.payload };
 
     case ACTION_TYPES.SELECT_COLOR_FOR_COMBINATION: {
       const { slotIndex, color } = action.payload;
 
       // Verificar si ya hay un color seleccionado para este slot
-      const existingIndex = state.selectedColors.findIndex(
+      const existingIndex = currentCombination.selectedColors.findIndex(
         (item) => item.slotIndex === slotIndex
       );
 
       let newSelectedColors;
       if (existingIndex >= 0) {
         // Reemplazar el color existente
-        newSelectedColors = [...state.selectedColors];
+        newSelectedColors = [...currentCombination.selectedColors];
         newSelectedColors[existingIndex] = { slotIndex, color };
       } else {
         // Añadir nuevo color
-        newSelectedColors = [...state.selectedColors, { slotIndex, color }];
+        newSelectedColors = [
+          ...currentCombination.selectedColors,
+          { slotIndex, color },
+        ];
       }
 
-      return {
-        ...state,
+      return updateCurrentCombination(state, {
         selectedColors: newSelectedColors,
-      };
+      });
     }
 
     case ACTION_TYPES.REMOVE_COLOR_FROM_COMBINATION: {
       const index = action.payload;
-      const newSelectedColors = [...state.selectedColors];
+      const newSelectedColors = [...currentCombination.selectedColors];
       newSelectedColors.splice(index, 1);
 
-      return {
-        ...state,
+      return updateCurrentCombination(state, {
         selectedColors: newSelectedColors,
-      };
+      });
     }
 
     case ACTION_TYPES.REORDER_COMBINATION_COLORS: {
@@ -320,7 +393,7 @@ function colorPaletteReducer(state, action) {
       // Ignorar si se suelta en la misma posición
       if (sourceIndex === targetIndex) return state;
 
-      const newColors = [...state.selectedColors];
+      const newColors = [...currentCombination.selectedColors];
       const draggedItem = { ...newColors[sourceIndex] };
 
       // Eliminar de la posición original
@@ -329,10 +402,7 @@ function colorPaletteReducer(state, action) {
       // Insertar en la nueva posición
       newColors.splice(targetIndex, 0, draggedItem);
 
-      return {
-        ...state,
-        selectedColors: newColors,
-      };
+      return updateCurrentCombination(state, { selectedColors: newColors });
     }
 
     case ACTION_TYPES.SET_SEARCH_TERM:
@@ -372,7 +442,12 @@ export function ColorPaletteProvider({ children }) {
   useEffect(() => {
     const loadFromLocalStorage = () => {
       const savedFavorites = localStorage.getItem("colorPaletteFavorites");
-      const savedSlots = localStorage.getItem("colorPaletteSlots");
+      const savedCombinations = localStorage.getItem(
+        "colorPaletteCombinations"
+      );
+      const savedActiveCombination = localStorage.getItem(
+        "colorPaletteActiveCombination"
+      );
       const savedSidebarState = localStorage.getItem(
         "colorPaletteSidebarState"
       );
@@ -385,7 +460,6 @@ export function ColorPaletteProvider({ children }) {
       const savedFullScreenMode = localStorage.getItem(
         "colorPaletteFullScreenMode"
       );
-      const savedSelectedColors = localStorage.getItem("colorPaletteSelection");
       const savedSidebarWidth = localStorage.getItem(
         "colorPaletteSidebarWidth"
       );
@@ -397,10 +471,67 @@ export function ColorPaletteProvider({ children }) {
         });
       }
 
-      if (savedSlots) {
+      if (savedCombinations) {
+        // Migrar datos antiguos si es necesario
+        const combinations = JSON.parse(savedCombinations);
+        if (Array.isArray(combinations) && combinations.length > 0) {
+          dispatch({
+            type: ACTION_TYPES.SET_COMBINATIONS,
+            payload: combinations,
+          });
+        }
+      } else {
+        // Migrar datos de formato anterior si existen
+        const savedSlots = localStorage.getItem("colorPaletteSlots");
+        const savedSelectedColors = localStorage.getItem(
+          "colorPaletteSelection"
+        );
+
+        if (savedSlots || savedSelectedColors) {
+          const migratedCombination = {
+            id: 1,
+            name: "Combinación 1",
+            slots: savedSlots ? JSON.parse(savedSlots) : [],
+            selectedSlotIndex: null,
+            selectedColors: [],
+          };
+
+          if (savedSelectedColors) {
+            try {
+              const parsedColors = JSON.parse(savedSelectedColors);
+              if (Array.isArray(parsedColors)) {
+                if (
+                  parsedColors.length > 0 &&
+                  parsedColors[0] &&
+                  !parsedColors[0].hasOwnProperty("slotIndex")
+                ) {
+                  const newFormat = [];
+                  parsedColors.forEach((color, index) => {
+                    if (color) {
+                      newFormat.push({ slotIndex: index, color });
+                    }
+                  });
+                  migratedCombination.selectedColors = newFormat;
+                } else {
+                  migratedCombination.selectedColors = parsedColors;
+                }
+              }
+            } catch (error) {
+              console.error("Error migrating selected colors", error);
+            }
+          }
+
+          dispatch({
+            type: ACTION_TYPES.SET_COMBINATIONS,
+            payload: [migratedCombination],
+          });
+        }
+      }
+
+      if (savedActiveCombination !== null) {
         dispatch({
-          type: ACTION_TYPES.SET_SLOTS,
-          payload: JSON.parse(savedSlots),
+          type: ACTION_TYPES.SET_ACTIVE_COMBINATION,
+          payload: JSON.parse(savedActiveCombination),
         });
       }
 
@@ -438,38 +569,6 @@ export function ColorPaletteProvider({ children }) {
           payload: JSON.parse(savedSidebarWidth),
         });
       }
-
-      if (savedSelectedColors) {
-        try {
-          const parsedColors = JSON.parse(savedSelectedColors);
-
-          if (Array.isArray(parsedColors)) {
-            if (
-              parsedColors.length > 0 &&
-              parsedColors[0] &&
-              !parsedColors[0].hasOwnProperty("slotIndex")
-            ) {
-              const newFormat = [];
-              parsedColors.forEach((color, index) => {
-                if (color) {
-                  newFormat.push({ slotIndex: index, color });
-                }
-              });
-              dispatch({
-                type: ACTION_TYPES.SET_SELECTED_COLORS,
-                payload: newFormat,
-              });
-            } else {
-              dispatch({
-                type: ACTION_TYPES.SET_SELECTED_COLORS,
-                payload: parsedColors,
-              });
-            }
-          }
-        } catch (error) {
-          console.error("Error loading selected colors", error);
-        }
-      }
     };
 
     loadFromLocalStorage();
@@ -484,8 +583,18 @@ export function ColorPaletteProvider({ children }) {
   }, [state.favorites]);
 
   useEffect(() => {
-    localStorage.setItem("colorPaletteSlots", JSON.stringify(state.slots));
-  }, [state.slots]);
+    localStorage.setItem(
+      "colorPaletteCombinations",
+      JSON.stringify(state.combinations)
+    );
+  }, [state.combinations]);
+
+  useEffect(() => {
+    localStorage.setItem(
+      "colorPaletteActiveCombination",
+      JSON.stringify(state.activeCombinationIndex)
+    );
+  }, [state.activeCombinationIndex]);
 
   useEffect(() => {
     localStorage.setItem(
@@ -517,13 +626,6 @@ export function ColorPaletteProvider({ children }) {
 
   useEffect(() => {
     localStorage.setItem(
-      "colorPaletteSelection",
-      JSON.stringify(state.selectedColors)
-    );
-  }, [state.selectedColors]);
-
-  useEffect(() => {
-    localStorage.setItem(
       "colorPaletteSidebarWidth",
       JSON.stringify(state.sidebarWidth)
     );
@@ -552,7 +654,8 @@ export function ColorPaletteProvider({ children }) {
 
   // Método para verificar si un color está seleccionado
   const isColorSelected = (slotIndex, color) => {
-    return state.selectedColors.some(
+    const currentCombination = getCurrentCombination(state);
+    return currentCombination.selectedColors.some(
       (item) => item.slotIndex === slotIndex && item.color.code === color.code
     );
   };

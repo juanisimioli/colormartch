@@ -2,20 +2,24 @@
 import React from "react";
 import { X } from "lucide-react";
 import { useColorPaletteContext } from "@/context/ColorPaletteContext";
-import { exportColorData } from "@/utils/exportUtils";
+import { exportCombination } from "@/utils/exportUtils";
 
 export default function Combination() {
   const { state, dispatch, ACTION_TYPES } = useColorPaletteContext();
-  const { selectedColors } = state;
-  
+  const { combinations, activeCombinationIndex } = state;
+
+  // Obtener la combinación activa
+  const currentCombination = combinations[activeCombinationIndex];
+  const selectedColors = currentCombination?.selectedColors || [];
+
   // Eliminar color de la combinación
   const removeColorFromCombination = (index) => {
-    dispatch({ 
-      type: ACTION_TYPES.REMOVE_COLOR_FROM_COMBINATION, 
-      payload: index 
+    dispatch({
+      type: ACTION_TYPES.REMOVE_COLOR_FROM_COMBINATION,
+      payload: index,
     });
   };
-  
+
   // Iniciar el arrastre para reordenar
   const handleCombinationDragStart = (index) => {
     const element = document.getElementById(`combination-item-${index}`);
@@ -23,11 +27,11 @@ export default function Combination() {
       element.setAttribute("data-dragging", "true");
     }
   };
-  
+
   // Manejar el drop para reordenar
   const handleCombinationDrop = (e, targetIndex) => {
     e.preventDefault();
-    
+
     // Encontrar el elemento que se está arrastrando
     const draggingElement = document.querySelector('[data-dragging="true"]');
     if (draggingElement) {
@@ -36,25 +40,27 @@ export default function Combination() {
         10
       );
       draggingElement.removeAttribute("data-dragging");
-      
+
       // Ignorar si se suelta en la misma posición
       if (sourceIndex === targetIndex) return;
-      
-      dispatch({ 
-        type: ACTION_TYPES.REORDER_COMBINATION_COLORS, 
-        payload: { sourceIndex, targetIndex }
+
+      dispatch({
+        type: ACTION_TYPES.REORDER_COMBINATION_COLORS,
+        payload: { sourceIndex, targetIndex },
       });
     }
   };
-  
-  // Exportar combinación
+
+  // Exportar combinación actual
   const handleExport = () => {
-    exportColorData(selectedColors);
+    exportCombination(currentCombination);
   };
-  
+
   return (
     <div className="mb-4 bg-gray-800 p-4 rounded-lg shadow-lg">
-      <h2 className="text-xl font-bold mb-3">Mi Combinación</h2>
+      <h2 className="text-xl font-bold mb-3">
+        {currentCombination?.name || "Mi Combinación"}
+      </h2>
       <div className="flex gap-1 rounded-md overflow-hidden shadow-lg">
         {selectedColors.map((item, index) => (
           <div
@@ -92,13 +98,15 @@ export default function Combination() {
             className="flex-1 p-2 bg-gray-800 rounded-md text-center border border-gray-700"
           >
             <div className="font-medium">{item.color.name}</div>
-            <div className="text-sm text-gray-400">
-              {item.color.code}
-            </div>
+            <div className="text-sm text-gray-400">{item.color.code}</div>
             <div className="text-xs mt-1">{item.color.hex}</div>
-            <div className="text-xs mt-1 text-gray-400">
-              {item.color.rgb}
-            </div>
+            <div className="text-xs mt-1 text-gray-400">{item.color.rgb}</div>
+            {/* Mostrar page y section si están disponibles */}
+            {item.color.page && item.color.section && (
+              <div className="text-xs mt-1 text-gray-500">
+                {item.color.page} / {item.color.section}
+              </div>
+            )}
           </div>
         ))}
       </div>

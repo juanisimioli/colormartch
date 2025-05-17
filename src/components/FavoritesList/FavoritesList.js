@@ -6,7 +6,12 @@ import ColorCard from "../ColorCard/ColorCard";
 
 export default function FavoritesList() {
   const { state, dispatch, ACTION_TYPES } = useColorPaletteContext();
-  const { favorites, favoritesExpanded, selectedSlotIndex } = state;
+  const { favorites, favoritesExpanded, combinations, activeCombinationIndex } =
+    state;
+
+  // Obtener la combinación activa
+  const currentCombination = combinations[activeCombinationIndex];
+  const selectedSlotIndex = currentCombination?.selectedSlotIndex;
 
   // Si no hay favoritos, no mostrar el componente
   if (!favorites.length) return null;

@@ -31,6 +31,12 @@ export default function ColorCard({ color, isFavorite, onClick, onDragStart }) {
       <div className="p-2 text-xs bg-gray-800">
         <div className="font-medium truncate">{color.name}</div>
         <div className="text-gray-300 text-xs">{color.code}</div>
+        {/* Mostrar page y section si están disponibles */}
+        {color.page && color.section && (
+          <div className="text-gray-400 text-xs mt-1">
+            {color.page} / {color.section}
+          </div>
+        )}
       </div>
       <button
         className="absolute top-2 right-2 p-1.5 bg-gray-800 bg-opacity-75 rounded-full hover:bg-opacity-90"

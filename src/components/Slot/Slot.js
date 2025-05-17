@@ -7,7 +7,11 @@ import ColorInSlot from "../ColorInSlot/ColorInSlot";
 export default function Slot({ slot, slotIndex, isDragOver }) {
   const { state, dispatch, ACTION_TYPES, isColorSelected } =
     useColorPaletteContext();
-  const { selectedSlotIndex } = state;
+  const { combinations, activeCombinationIndex } = state;
+
+  // Obtener la combinación activa
+  const currentCombination = combinations[activeCombinationIndex];
+  const selectedSlotIndex = currentCombination?.selectedSlotIndex;
 
   // Renombrar slot
   const handleRenameSlot = (e) => {
