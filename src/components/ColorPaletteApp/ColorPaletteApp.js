@@ -5,7 +5,6 @@ import Header from "../Header/Header";
 import Sidebar from "../Sidebar/Sidebar";
 import SlotsList from "../SlotList/SlotList";
 import Combination from "../Combination/Combination";
-import CombinationManager from "../CombinationManager/CombinationManager";
 import { useColorPaletteContext } from "@/context/ColorPaletteContext";
 
 const scrollbarStyles = `
@@ -53,9 +52,6 @@ function ColorPaletteContent() {
         {/* Main content - Solo visible si no está en modo pantalla completa */}
         {!fullScreenMode && (
           <div className="flex-1 p-4 flex flex-col h-full">
-            {/* Gestión de Combinaciones */}
-            <CombinationManager />
-
             {/* Combinación actual - Visible si tiene colores seleccionados */}
             {selectedColors.length > 0 && <Combination />}
 

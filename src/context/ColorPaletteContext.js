@@ -212,9 +212,13 @@ function colorPaletteReducer(state, action) {
     case ACTION_TYPES.ADD_COLOR_TO_SLOT: {
       const { slotIndex, color } = action.payload;
 
-      if (slotIndex === null) return state;
+      if (slotIndex === null || slotIndex === undefined) return state;
 
       const updatedSlots = [...currentCombination.slots];
+
+      // Verificar que el slot existe
+      if (slotIndex >= updatedSlots.length) return state;
+
       const existingColorIndex = updatedSlots[slotIndex].colors.findIndex(
         (c) => c.code === color.code
       );
@@ -225,7 +229,11 @@ function colorPaletteReducer(state, action) {
       // Añadir el color al final
       updatedSlots[slotIndex].colors.push({ ...color });
 
-      return updateCurrentCombination(state, { slots: updatedSlots });
+      // Seleccionar automáticamente este slot para futuras operaciones
+      return updateCurrentCombination(state, {
+        slots: updatedSlots,
+        selectedSlotIndex: slotIndex,
+      });
     }
 
     case ACTION_TYPES.REMOVE_COLOR_FROM_SLOT: {

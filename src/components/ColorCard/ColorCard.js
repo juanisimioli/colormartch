@@ -1,9 +1,14 @@
 "use client";
-import React from "react";
+import React, { memo } from "react";
 import { Heart } from "lucide-react";
 import { useColorPaletteContext } from "@/context/ColorPaletteContext";
 
-export default function ColorCard({ color, isFavorite, onClick, onDragStart }) {
+const ColorCard = memo(function ColorCard({
+  color,
+  isFavorite,
+  onClick,
+  onDragStart,
+}) {
   const { dispatch, ACTION_TYPES } = useColorPaletteContext();
 
   const handleFavoriteToggle = (e) => {
@@ -50,4 +55,6 @@ export default function ColorCard({ color, isFavorite, onClick, onDragStart }) {
       </button>
     </div>
   );
-}
+});
+
+export default ColorCard;

@@ -9,8 +9,6 @@ export const exportCombination = (combination) => {
     selectedColors: combination.selectedColors.map((item) => ({
       name: item.color.name,
       code: item.color.code,
-      hex: item.color.hex,
-      rgb: item.color.rgb,
       page: item.color.page,
       section: item.color.section,
     })),
@@ -19,8 +17,6 @@ export const exportCombination = (combination) => {
       colors: slot.colors.map((color) => ({
         name: color.name,
         code: color.code,
-        hex: color.hex,
-        rgb: color.rgb,
         page: color.page,
         section: color.section,
       })),
@@ -59,8 +55,6 @@ export const exportAllCombinations = (combinations) => {
       selectedColors: combination.selectedColors.map((item) => ({
         name: item.color.name,
         code: item.color.code,
-        hex: item.color.hex,
-        rgb: item.color.rgb,
         page: item.color.page,
         section: item.color.section,
       })),
@@ -69,8 +63,6 @@ export const exportAllCombinations = (combinations) => {
         colors: slot.colors.map((color) => ({
           name: color.name,
           code: color.code,
-          hex: color.hex,
-          rgb: color.rgb,
           page: color.page,
           section: color.section,
         })),

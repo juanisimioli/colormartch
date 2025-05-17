@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useMemo } from "react";
 import {
   Search,
   ChevronLeft,
@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { useColorPaletteContext } from "@/context/ColorPaletteContext";
 import { useResizable } from "@/hooks/useResizable";
+import { useDebounce } from "@/hooks/useDebounce";
 import { allAlbaColors } from "@/albaColors/helper";
 import FavoritesList from "../FavoritesList/FavoritesList";
 import ColorCard from "../ColorCard/ColorCard";
@@ -19,12 +20,27 @@ export default function Sidebar() {
     sidebarCollapsed,
     fullScreenMode,
     sidebarWidth,
-    filteredColors,
     favorites,
     searchTerm,
     combinations,
     activeCombinationIndex,
   } = state;
+
+  // Debounce del término de búsqueda para mejor rendimiento
+  const debouncedSearchTerm = useDebounce(searchTerm, 300);
+
+  // Memoizar los colores filtrados
+  const filteredColors = useMemo(() => {
+    if (!debouncedSearchTerm) return allAlbaColors;
+
+    const lowercasedSearchTerm = debouncedSearchTerm.toLowerCase();
+    return allAlbaColors.filter(
+      (color) =>
+        color.name.toLowerCase().includes(lowercasedSearchTerm) ||
+        color.code.toLowerCase().includes(lowercasedSearchTerm) ||
+        color.category?.toLowerCase().includes(lowercasedSearchTerm)
+    );
+  }, [debouncedSearchTerm]);
 
   // Obtener la combinación activa
   const currentCombination = combinations[activeCombinationIndex];
@@ -57,7 +73,7 @@ export default function Sidebar() {
     });
   };
 
-  // Manejar cambio en la búsqueda
+  // Manejar cambio en la búsqueda (sin debounce en el dispatch)
   const handleSearchChange = (e) => {
     dispatch({
       type: ACTION_TYPES.SET_SEARCH_TERM,

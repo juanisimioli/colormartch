@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useCallback } from "react";
 import { Plus, ChevronDown, ChevronRight } from "lucide-react";
 import { useColorPaletteContext } from "@/context/ColorPaletteContext";
 import Slot from "../Slot/Slot";
@@ -18,20 +18,59 @@ export default function SlotsList() {
   const slots = currentCombination?.slots || [];
 
   // Toggle expansión de slots
-  const toggleSlotsExpanded = () => {
+  const toggleSlotsExpanded = useCallback(() => {
     dispatch({
       type: ACTION_TYPES.SET_SLOTS_EXPANDED,
       payload: !slotsExpanded,
     });
-  };
+  }, [dispatch, ACTION_TYPES, slotsExpanded]);
 
   // Crear nuevo slot
-  const createSlot = () => {
+  const createSlot = useCallback(() => {
     dispatch({ type: ACTION_TYPES.CREATE_SLOT });
-  };
+  }, [dispatch, ACTION_TYPES]);
+
+  // Manejar drop en área vacía para auto-crear slot
+  const handleEmptyAreaDrop = useCallback(
+    (e) => {
+      e.preventDefault();
+
+      try {
+        const dataString = e.dataTransfer.getData("application/json");
+        if (!dataString) return;
+
+        const data = JSON.parse(dataString);
+
+        // Solo crear slot si es un color del catálogo
+        if (data.type === "catalog-color") {
+          // Crear nuevo slot
+          dispatch({ type: ACTION_TYPES.CREATE_SLOT });
+
+          // Agregar el color al nuevo slot (será el último)
+          setTimeout(() => {
+            dispatch({
+              type: ACTION_TYPES.ADD_COLOR_TO_SLOT,
+              payload: { slotIndex: slots.length, color: data.color },
+            });
+          }, 0);
+        }
+      } catch (error) {
+        console.error("Error al procesar drop en área vacía:", error);
+      }
+    },
+    [dispatch, ACTION_TYPES, slots.length]
+  );
+
+  const handleDragOver = useCallback((e) => {
+    e.preventDefault();
+  }, []);
 
   return (
-    <div className="flex-1 overflow-y-auto custom-scrollbar pr-4">
+    <div
+      className="flex-1 overflow-y-auto custom-scrollbar pr-4"
+      onDragOver={handleDragOver}
+      onDrop={handleEmptyAreaDrop}
+    >
       <div className="mb-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <h2 className="text-xl font-bold">Mis Colecciones</h2>
@@ -68,8 +107,16 @@ export default function SlotsList() {
           ))}
 
           {slots.length === 0 && (
-            <div className="text-center p-10 text-gray-400">
-              <p>No hay slots creados. Crea tu primer slot para comenzar.</p>
+            <div
+              className="text-center p-10 text-gray-400 border-2 border-dashed border-gray-600 rounded-lg"
+              onDragOver={handleDragOver}
+              onDrop={handleEmptyAreaDrop}
+            >
+              <p className="mb-2">No hay slots creados.</p>
+              <p className="text-sm">
+                Arrastra un color aquí para crear tu primer slot
+                automáticamente.
+              </p>
             </div>
           )}
         </div>
