@@ -772,13 +772,6 @@ const blanco: AlbaColor[] = [
     label: "rgb(51, 51, 51)",
   },
   {
-    name: "Estrella Nueva",
-    code: "",
-    hex: "#E6E9E9",
-    rgb: "rgb(230, 233, 233)",
-    label: "rgb(51, 51, 51)",
-  },
-  {
     name: "Domingo Nublado",
     code: "30YY 83/026",
     hex: "#ECE9E2",
@@ -13570,6 +13563,8 @@ const turquesa: AlbaColor[] = [
     hex: "#D8E7E9",
     rgb: "rgb(216, 231, 233)",
     label: "rgb(51, 51, 51)",
+    page: 167,
+    section: 1,
   },
   {
     name: "Divertido Verano",
@@ -13577,6 +13572,8 @@ const turquesa: AlbaColor[] = [
     hex: "#D6E8E8",
     rgb: "rgb(214, 232, 232)",
     label: "rgb(51, 51, 51)",
+    page: 160,
+    section: 1,
   },
   {
     name: "Iceberg Icónico",
@@ -13627,6 +13624,8 @@ const turquesa: AlbaColor[] = [
     hex: "#C8E6E9",
     rgb: "rgb(200, 230, 233)",
     label: "rgb(51, 51, 51)",
+    page: 161,
+    section: 1,
   },
   {
     name: "Reflejo de Cielo",
@@ -13634,6 +13633,8 @@ const turquesa: AlbaColor[] = [
     hex: "#CADEE1",
     rgb: "rgb(202, 222, 225)",
     label: "rgb(51, 51, 51)",
+    page: 165,
+    section: 2,
   },
   {
     name: "Sublime Océano",
@@ -13650,6 +13651,8 @@ const turquesa: AlbaColor[] = [
     hex: "#C4E1E4",
     rgb: "rgb(196, 225, 228)",
     label: "rgb(51, 51, 51)",
+    page: 159,
+    section: 1,
   },
   {
     name: "Verde Laguna",
@@ -13684,6 +13687,8 @@ const turquesa: AlbaColor[] = [
     hex: "#BEE2E7",
     rgb: "rgb(190, 226, 231)",
     label: "rgb(51, 51, 51)",
+    page: 163,
+    section: 1,
   },
   {
     name: "Agua Celestial",
@@ -13709,6 +13714,8 @@ const turquesa: AlbaColor[] = [
     hex: "#C9DDDD",
     rgb: "rgb(201, 221, 221)",
     label: "rgb(51, 51, 51)",
+    page: 158,
+    section: 1,
   },
   {
     name: "Mar Griego",
@@ -13716,6 +13723,8 @@ const turquesa: AlbaColor[] = [
     hex: "#BEE1E2",
     rgb: "rgb(190, 225, 226)",
     label: "rgb(51, 51, 51)",
+    page: 160,
+    section: 2,
   },
   {
     name: "Azul Cielo",
@@ -13768,6 +13777,8 @@ const turquesa: AlbaColor[] = [
     hex: "#A8DEE2",
     rgb: "rgb(168, 222, 226)",
     label: "rgb(51, 51, 51)",
+    page: 161,
+    section: 2,
   },
   {
     name: "Cielo de Ángeles",
@@ -13775,6 +13786,8 @@ const turquesa: AlbaColor[] = [
     hex: "#B3D6DC",
     rgb: "rgb(179, 214, 220)",
     label: "rgb(51, 51, 51)",
+    page: 158,
+    section: 2,
   },
   {
     name: "Vista del Lago",
@@ -13782,6 +13795,8 @@ const turquesa: AlbaColor[] = [
     hex: "#B3D7DB",
     rgb: "rgb(179, 215, 219)",
     label: "rgb(51, 51, 51)",
+    page: 159,
+    section: 2,
   },
   {
     name: "Alga de Mar",
@@ -13832,6 +13847,8 @@ const turquesa: AlbaColor[] = [
     hex: "#96D6DD",
     rgb: "rgb(150, 214, 221)",
     label: "rgb(51, 51, 51)",
+    page: 160,
+    section: 3,
   },
   {
     name: "Verde Radiante",
@@ -13855,6 +13872,8 @@ const turquesa: AlbaColor[] = [
     hex: "#8CD5DC",
     rgb: "rgb(140, 213, 220)",
     label: "rgb(51, 51, 51)",
+    page: 161,
+    section: 3,
   },
   {
     name: "Maravillas Griegas",
@@ -13960,6 +13979,8 @@ const turquesa: AlbaColor[] = [
     hex: "#53BFCB",
     rgb: "rgb(83, 191, 203)",
     label: "rgb(51, 51, 51)",
+    page: 160,
+    section: 4,
   },
   {
     name: "Azul Tahití",
@@ -14028,6 +14049,8 @@ const turquesa: AlbaColor[] = [
     hex: "#49A7B5",
     rgb: "rgb(73, 167, 181)",
     label: "rgb(51, 51, 51)",
+    page: 159,
+    section: 5,
   },
   {
     name: "Azul Buceo",
@@ -14035,6 +14058,8 @@ const turquesa: AlbaColor[] = [
     hex: "#20ADB8",
     rgb: "rgb(32, 173, 184)",
     label: "rgb(51, 51, 51)",
+    page: 160,
+    section: 5,
   },
   {
     name: "Verde Futuro",
@@ -14099,6 +14124,8 @@ const turquesa: AlbaColor[] = [
     hex: "#0096A2",
     rgb: "rgb(0, 150, 162)",
     label: "rgb(255, 255, 255)",
+    page: 160,
+    section: 6,
   },
   {
     name: "Turquesa Intenso",
@@ -14136,6 +14163,8 @@ const turquesa: AlbaColor[] = [
     hex: "#00879E",
     rgb: "rgb(0, 135, 158)",
     label: "rgb(255, 255, 255)",
+    page: 161,
+    section: 7,
   },
   {
     name: "Desfile de Luz",
@@ -14152,6 +14181,8 @@ const turquesa: AlbaColor[] = [
     hex: "#008897",
     rgb: "rgb(0, 136, 151)",
     label: "rgb(255, 255, 255)",
+    page: 159,
+    section: 6,
   },
   {
     name: "Esencia de Jade",
@@ -14200,6 +14231,8 @@ const turquesa: AlbaColor[] = [
     hex: "#007585",
     rgb: "rgb(0, 117, 133)",
     label: "rgb(255, 255, 255)",
+    page: 159,
+    section: 7,
   },
   {
     name: "Valle de Jade",
@@ -14394,6 +14427,8 @@ const turquesa: AlbaColor[] = [
     hex: "#D1DEDF",
     rgb: "rgb(209, 222, 223)",
     label: "rgb(51, 51, 51)",
+    page: 157,
+    section: 1,
   },
   {
     name: "Ópalo Claro",
@@ -14463,6 +14498,8 @@ const turquesa: AlbaColor[] = [
     hex: "#BDD1D3",
     rgb: "rgb(189, 209, 211)",
     label: "rgb(51, 51, 51)",
+    page: 157,
+    section: 2,
   },
   {
     name: "Brisa Fresca",
@@ -14495,6 +14532,8 @@ const turquesa: AlbaColor[] = [
     hex: "#ADC9CC",
     rgb: "rgb(173, 201, 204)",
     label: "rgb(51, 51, 51)",
+    page: 157,
+    section: 3,
   },
   {
     name: "Gris Marmota",
@@ -14552,6 +14591,8 @@ const turquesa: AlbaColor[] = [
     hex: "#83C5CE",
     rgb: "rgb(131, 197, 206)",
     label: "rgb(51, 51, 51)",
+    page: 159,
+    section: 3,
   },
   {
     name: "Nórdico",
@@ -14577,6 +14618,8 @@ const turquesa: AlbaColor[] = [
     hex: "#88B7BF",
     rgb: "rgb(136, 183, 191)",
     label: "rgb(51, 51, 51)",
+    page: 158,
+    section: 3,
   },
   {
     name: "Isla Bella",
@@ -14598,6 +14641,8 @@ const turquesa: AlbaColor[] = [
     hex: "#6BB7C4",
     rgb: "rgb(107, 183, 196)",
     label: "rgb(51, 51, 51)",
+    page: 159,
+    section: 4,
   },
   {
     name: "Mina De Grava",
@@ -14660,6 +14705,8 @@ const turquesa: AlbaColor[] = [
     hex: "#85A6AB",
     rgb: "rgb(133, 166, 171)",
     label: "rgb(51, 51, 51)",
+    page: 157,
+    section: 4,
   },
   {
     name: "Sensación Cristal",
@@ -14685,6 +14732,8 @@ const turquesa: AlbaColor[] = [
     hex: "#62A3AD",
     rgb: "rgb(98, 163, 173)",
     label: "rgb(51, 51, 51)",
+    page: 158,
+    section: 4,
   },
   {
     name: "Siete Lagos",
@@ -14735,6 +14784,8 @@ const turquesa: AlbaColor[] = [
     hex: "#62868B",
     rgb: "rgb(98, 134, 139)",
     label: "rgb(255, 255, 255)",
+    page: 157,
+    section: 5,
   },
   {
     name: "Jardín Nocturno",
@@ -14756,6 +14807,8 @@ const turquesa: AlbaColor[] = [
     hex: "#37919D",
     rgb: "rgb(55, 145, 157)",
     label: "rgb(255, 255, 255)",
+    page: 158,
+    section: 5,
   },
   {
     name: "Cascada",
@@ -14848,6 +14901,8 @@ const turquesa: AlbaColor[] = [
     hex: "#4B7278",
     rgb: "rgb(75, 114, 120)",
     label: "rgb(255, 255, 255)",
+    page: 157,
+    section: 6,
   },
   {
     name: "Cielo Tempestuoso",
@@ -14906,17 +14961,12 @@ const turquesa: AlbaColor[] = [
   },
   {
     name: "Azul de Bohemia",
-    code: "",
-    hex: "#39595F",
-    rgb: "rgb(57, 89, 95)",
-    label: "rgb(255, 255, 255)",
-  },
-  {
-    name: "Azul de Bohemia",
     code: "30BG 10/111",
     hex: "#39595F",
     rgb: "rgb(57, 89, 95)",
     label: "rgb(255, 255, 255)",
+    page: 157,
+    section: 7,
   },
   {
     name: "Artesano",
@@ -14924,6 +14974,8 @@ const turquesa: AlbaColor[] = [
     hex: "#006E7B",
     rgb: "rgb(0, 110, 123)",
     label: "rgb(255, 255, 255)",
+    page: 158,
+    section: 6,
   },
   {
     name: "Popurrí de Algas",
@@ -15002,6 +15054,8 @@ const turquesa: AlbaColor[] = [
     hex: "#005765",
     rgb: "rgb(0, 87, 101)",
     label: "rgb(255, 255, 255)",
+    page: 160,
+    section: 7,
   },
   {
     name: "Precioso",
@@ -15016,6 +15070,8 @@ const turquesa: AlbaColor[] = [
     hex: "#00565F",
     rgb: "rgb(0, 86, 95)",
     label: "rgb(255, 255, 255)",
+    page: 158,
+    section: 7,
   },
   {
     name: "Montaña Majestuosa",
@@ -15080,6 +15136,8 @@ const azul: AlbaColor[] = [
     hex: "#D7E5EA",
     rgb: "rgb(215, 229, 234)",
     label: "rgb(51, 51, 51)",
+    page: 175,
+    section: 1,
   },
   {
     name: "Mañana Junto al Mar",
@@ -15087,6 +15145,8 @@ const azul: AlbaColor[] = [
     hex: "#D6E5EB",
     rgb: "rgb(214, 229, 235)",
     label: "rgb(51, 51, 51)",
+    page: 174,
+    section: 1,
   },
   {
     name: "Era del Hielo",
@@ -15094,6 +15154,8 @@ const azul: AlbaColor[] = [
     hex: "#D3E5E9",
     rgb: "rgb(211, 229, 233)",
     label: "rgb(51, 51, 51)",
+    page: 173,
+    section: 1,
   },
   {
     name: "Viento en Popa",
@@ -15101,6 +15163,8 @@ const azul: AlbaColor[] = [
     hex: "#D8E0E9",
     rgb: "rgb(216, 224, 233)",
     label: "rgb(51, 51, 51)",
+    page: 180,
+    section: 1,
   },
   {
     name: "Malva Brillante",
@@ -15108,6 +15172,8 @@ const azul: AlbaColor[] = [
     hex: "#D4DEEE",
     rgb: "rgb(212, 222, 238)",
     label: "rgb(51, 51, 51)",
+    page: 186,
+    section: 1,
   },
   {
     name: "Aroma a Violeta",
@@ -15122,6 +15188,8 @@ const azul: AlbaColor[] = [
     hex: "#D0E4E8",
     rgb: "rgb(208, 228, 232)",
     label: "rgb(51, 51, 51)",
+    page: 164,
+    section: 1,
   },
   {
     name: "Visión Aérea",
@@ -15143,6 +15211,8 @@ const azul: AlbaColor[] = [
     hex: "#C5E4E9",
     rgb: "rgb(197, 228, 233)",
     label: "rgb(51, 51, 51)",
+    page: 162,
+    section: 1,
   },
   {
     name: "Sonata de Domingo",
@@ -15157,6 +15227,8 @@ const azul: AlbaColor[] = [
     hex: "#C9DEE9",
     rgb: "rgb(201, 222, 233)",
     label: "rgb(51, 51, 51)",
+    page: 175,
+    section: 2,
   },
   {
     name: "Agua Mística",
@@ -15164,6 +15236,8 @@ const azul: AlbaColor[] = [
     hex: "#C4E0EB",
     rgb: "rgb(196, 224, 235)",
     label: "rgb(51, 51, 51)",
+    page: 169,
+    section: 1,
   },
   {
     name: "Cielo de Verano",
@@ -15171,6 +15245,8 @@ const azul: AlbaColor[] = [
     hex: "#C1E3EA",
     rgb: "rgb(193, 227, 234)",
     label: "rgb(51, 51, 51)",
+    page: 162,
+    section: 2,
   },
   {
     name: "Primera Edición",
@@ -15178,6 +15254,8 @@ const azul: AlbaColor[] = [
     hex: "#C3E1E9",
     rgb: "rgb(195, 225, 233)",
     label: "rgb(51, 51, 51)",
+    page: 164,
+    section: 2,
   },
   {
     name: "Lavanda Matinal",
@@ -15192,6 +15270,8 @@ const azul: AlbaColor[] = [
     hex: "#CBD8E6",
     rgb: "rgb(203, 216, 230)",
     label: "rgb(51, 51, 51)",
+    page: 185,
+    section: 1,
   },
   {
     name: "Estallido de Lavandas",
@@ -15199,6 +15279,8 @@ const azul: AlbaColor[] = [
     hex: "#C7D8E6",
     rgb: "rgb(199, 216, 230)",
     label: "rgb(51, 51, 51)",
+    page: 181,
+    section: 1,
   },
   {
     name: "Cielo Californiano",
@@ -15206,6 +15288,8 @@ const azul: AlbaColor[] = [
     hex: "#C1DDE7",
     rgb: "rgb(193, 221, 231)",
     label: "rgb(51, 51, 51)",
+    page: 167,
+    section: 2,
   },
   {
     name: "Azul Arcadia",
@@ -15220,6 +15304,8 @@ const azul: AlbaColor[] = [
     hex: "#C7D9E3",
     rgb: "rgb(199, 217, 227)",
     label: "rgb(51, 51, 51)",
+    page: 183,
+    section: 1,
   },
   {
     name: "Bruma Naciente",
@@ -15227,6 +15313,8 @@ const azul: AlbaColor[] = [
     hex: "#BBDDE9",
     rgb: "rgb(187, 221, 233)",
     label: "rgb(51, 51, 51)",
+    page: 168,
+    section: 1,
   },
   {
     name: "Azul Viento",
@@ -15234,6 +15322,8 @@ const azul: AlbaColor[] = [
     hex: "#C1DAE6",
     rgb: "rgb(193, 218, 230)",
     label: "rgb(51, 51, 51)",
+    page: 171,
+    section: 2,
   },
   {
     name: "Suave Lavanda",
@@ -15241,6 +15331,8 @@ const azul: AlbaColor[] = [
     hex: "#CBD3E2",
     rgb: "rgb(203, 211, 226)",
     label: "rgb(51, 51, 51)",
+    page: 187,
+    section: 2,
   },
   {
     name: "Azul Polo",
@@ -15255,6 +15347,8 @@ const azul: AlbaColor[] = [
     hex: "#C3D8E3",
     rgb: "rgb(195, 216, 227)",
     label: "rgb(51, 51, 51)",
+    page: 176,
+    section: 1,
   },
   {
     name: "Azul Salvaje",
@@ -15276,6 +15370,8 @@ const azul: AlbaColor[] = [
     hex: "#B4DCEA",
     rgb: "rgb(180, 220, 234)",
     label: "rgb(51, 51, 51)",
+    page: 173,
+    section: 2,
   },
   {
     name: "Escarabajo Azul",
@@ -15283,6 +15379,8 @@ const azul: AlbaColor[] = [
     hex: "#BDD7E3",
     rgb: "rgb(189, 215, 227)",
     label: "rgb(51, 51, 51)",
+    page: 172,
+    section: 1,
   },
   {
     name: "Azul Discreto",
@@ -15290,6 +15388,8 @@ const azul: AlbaColor[] = [
     hex: "#BFD1E4",
     rgb: "rgb(191, 209, 228)",
     label: "rgb(51, 51, 51)",
+    page: 185,
+    section: 2,
   },
   {
     name: "Azul Colgante",
@@ -15311,6 +15411,8 @@ const azul: AlbaColor[] = [
     hex: "#C2D0DF",
     rgb: "rgb(194, 208, 223)",
     label: "rgb(51, 51, 51)",
+    page: 180,
+    section: 2,
   },
   {
     name: "Cielo Radiante",
@@ -15318,6 +15420,8 @@ const azul: AlbaColor[] = [
     hex: "#B5D7E2",
     rgb: "rgb(181, 215, 226)",
     label: "rgb(51, 51, 51)",
+    page: 169,
+    section: 2,
   },
   {
     name: "Sensación Festiva",
@@ -15325,6 +15429,8 @@ const azul: AlbaColor[] = [
     hex: "#B4CEEB",
     rgb: "rgb(180, 206, 235)",
     label: "rgb(51, 51, 51)",
+    page: 181,
+    section: 2,
   },
   {
     name: "Violeta Perla",
@@ -15339,6 +15445,8 @@ const azul: AlbaColor[] = [
     hex: "#B6D4E0",
     rgb: "rgb(182, 212, 224)",
     label: "rgb(51, 51, 51)",
+    page: 174,
+    section: 2,
   },
   {
     name: "Agua Secreta",
@@ -15346,6 +15454,8 @@ const azul: AlbaColor[] = [
     hex: "#B2D1E7",
     rgb: "rgb(178, 209, 231)",
     label: "rgb(51, 51, 51)",
+    page: 175,
+    section: 3,
   },
   {
     name: "Biquini",
@@ -15353,6 +15463,8 @@ const azul: AlbaColor[] = [
     hex: "#B6D1E2",
     rgb: "rgb(182, 209, 226)",
     label: "rgb(51, 51, 51)",
+    page: 183,
+    section: 2,
   },
   {
     name: "Celestial Claro",
@@ -15360,6 +15472,8 @@ const azul: AlbaColor[] = [
     hex: "#B1D2E6",
     rgb: "rgb(177, 210, 230)",
     label: "rgb(51, 51, 51)",
+    page: 176,
+    section: 2,
   },
   {
     name: "Azul Burbujeante",
@@ -15367,6 +15481,8 @@ const azul: AlbaColor[] = [
     hex: "#A8DAE5",
     rgb: "rgb(168, 218, 229)",
     label: "rgb(51, 51, 51)",
+    page: 163,
+    section: 2,
   },
   {
     name: "Faceta Azul",
@@ -15381,6 +15497,8 @@ const azul: AlbaColor[] = [
     hex: "#B0D3DB",
     rgb: "rgb(176, 211, 219)",
     label: "rgb(51, 51, 51)",
+    page: 164,
+    section: 3,
   },
   {
     name: "Azul Liláceo",
@@ -15388,6 +15506,8 @@ const azul: AlbaColor[] = [
     hex: "#B3CADE",
     rgb: "rgb(179, 202, 222)",
     label: "rgb(51, 51, 51)",
+    page: 184,
+    section: 2,
   },
   {
     name: "Dejo de Ciruela",
@@ -15395,6 +15515,8 @@ const azul: AlbaColor[] = [
     hex: "#A9CCE6",
     rgb: "rgb(169, 204, 230)",
     label: "rgb(51, 51, 51)",
+    page: 183,
+    section: 3,
   },
   {
     name: "Azul Remoto",
@@ -15402,6 +15524,8 @@ const azul: AlbaColor[] = [
     hex: "#9FD3E7",
     rgb: "rgb(159, 211, 231)",
     label: "rgb(51, 51, 51)",
+    page: 168,
+    section: 2,
   },
   {
     name: "Navegante Aventurero",
@@ -15409,6 +15533,8 @@ const azul: AlbaColor[] = [
     hex: "#A0D6E3",
     rgb: "rgb(160, 214, 227)",
     label: "rgb(51, 51, 51)",
+    page: 162,
+    section: 3,
   },
   {
     name: "Océano Bravo",
@@ -15416,6 +15542,8 @@ const azul: AlbaColor[] = [
     hex: "#AACCE3",
     rgb: "rgb(170, 204, 227)",
     label: "rgb(51, 51, 51)",
+    page: 182,
+    section: 1,
   },
   {
     name: "Azul Harmonía",
@@ -15423,6 +15551,8 @@ const azul: AlbaColor[] = [
     hex: "#9FD5E2",
     rgb: "rgb(159, 213, 226)",
     label: "rgb(51, 51, 51)",
+    page: 163,
+    section: 3,
   },
   {
     name: "Lila Moreno",
@@ -15430,6 +15560,8 @@ const azul: AlbaColor[] = [
     hex: "#B2C5DF",
     rgb: "rgb(178, 197, 223)",
     label: "rgb(51, 51, 51)",
+    page: 186,
+    section: 2,
   },
   {
     name: "Azul Tranquilo",
@@ -15437,6 +15569,8 @@ const azul: AlbaColor[] = [
     hex: "#A1C9E3",
     rgb: "rgb(161, 201, 227)",
     label: "rgb(51, 51, 51)",
+    page: 176,
+    section: 3,
   },
   {
     name: "Flor del Atardecer",
@@ -15444,6 +15578,8 @@ const azul: AlbaColor[] = [
     hex: "#B2C1D7",
     rgb: "rgb(178, 193, 215)",
     label: "rgb(51, 51, 51)",
+    page: 187,
+    section: 3,
   },
   {
     name: "Mermelada de Ciruela",
@@ -15458,6 +15594,8 @@ const azul: AlbaColor[] = [
     hex: "#8DCCE7",
     rgb: "rgb(141, 204, 231)",
     label: "rgb(51, 51, 51)",
+    page: 174,
+    section: 3,
   },
   {
     name: "Fresco Encuentro",
@@ -15465,6 +15603,8 @@ const azul: AlbaColor[] = [
     hex: "#9AC2E2",
     rgb: "rgb(154, 194, 226)",
     label: "rgb(51, 51, 51)",
+    page: 182,
+    section: 2,
   },
   {
     name: "Vasto Océano",
@@ -15472,6 +15612,8 @@ const azul: AlbaColor[] = [
     hex: "#A1C0DC",
     rgb: "rgb(161, 192, 220)",
     label: "rgb(51, 51, 51)",
+    page: 185,
+    section: 3,
   },
   {
     name: "Día de Spa",
@@ -15479,6 +15621,8 @@ const azul: AlbaColor[] = [
     hex: "#87CEE2",
     rgb: "rgb(135, 206, 226)",
     label: "rgb(51, 51, 51)",
+    page: 162,
+    section: 4,
   },
   {
     name: "Azul Turquía",
@@ -15500,6 +15644,8 @@ const azul: AlbaColor[] = [
     hex: "#9AC5D5",
     rgb: "rgb(154, 197, 213)",
     label: "rgb(51, 51, 51)",
+    page: 169,
+    section: 3,
   },
   {
     name: "Nobleza",
@@ -15528,6 +15674,8 @@ const azul: AlbaColor[] = [
     hex: "#82C8E3",
     rgb: "rgb(130, 200, 227)",
     label: "rgb(51, 51, 51)",
+    page: 173,
+    section: 3,
   },
   {
     name: "Cielo Limpio",
@@ -15535,6 +15683,8 @@ const azul: AlbaColor[] = [
     hex: "#7FCADB",
     rgb: "rgb(127, 202, 219)",
     label: "rgb(51, 51, 51)",
+    page: 163,
+    section: 4,
   },
   {
     name: "Orquídea Sublime",
@@ -15549,6 +15699,8 @@ const azul: AlbaColor[] = [
     hex: "#9BB6D1",
     rgb: "rgb(155, 182, 209)",
     label: "rgb(51, 51, 51)",
+    page: 180,
+    section: 3,
   },
   {
     name: "Aguas de Lisboa",
@@ -15556,6 +15708,8 @@ const azul: AlbaColor[] = [
     hex: "#91B5D8",
     rgb: "rgb(145, 181, 216)",
     label: "rgb(51, 51, 51)",
+    page: 181,
+    section: 3,
   },
   {
     name: "Dalia Azul",
@@ -15563,6 +15717,8 @@ const azul: AlbaColor[] = [
     hex: "#8DBDCF",
     rgb: "rgb(141, 189, 207)",
     label: "rgb(51, 51, 51)",
+    page: 167,
+    section: 4,
   },
   {
     name: "Horizonte Azul",
@@ -15570,6 +15726,8 @@ const azul: AlbaColor[] = [
     hex: "#87B1D5",
     rgb: "rgb(135, 177, 213)",
     label: "rgb(51, 51, 51)",
+    page: 184,
+    section: 3,
   },
   {
     name: "Azul Ópalo",
@@ -15584,6 +15742,8 @@ const azul: AlbaColor[] = [
     hex: "#7FB7D6",
     rgb: "rgb(127, 183, 214)",
     label: "rgb(51, 51, 51)",
+    page: 175,
+    section: 4,
   },
   {
     name: "Versalles",
@@ -15598,6 +15758,8 @@ const azul: AlbaColor[] = [
     hex: "#83B8C5",
     rgb: "rgb(131, 184, 197)",
     label: "rgb(51, 51, 51)",
+    page: 164,
+    section: 4,
   },
   {
     name: "Azul Toronto",
@@ -15612,6 +15774,8 @@ const azul: AlbaColor[] = [
     hex: "#8FA6C6",
     rgb: "rgb(143, 166, 198)",
     label: "rgb(51, 51, 51)",
+    page: 186,
+    section: 4,
   },
   {
     name: "Sensación Francesa",
@@ -15619,6 +15783,8 @@ const azul: AlbaColor[] = [
     hex: "#7CA4D3",
     rgb: "rgb(124, 164, 211)",
     label: "rgb(51, 51, 51)",
+    page: 185,
+    section: 4,
   },
   {
     name: "Flores de Mayo Azules",
@@ -15633,6 +15799,8 @@ const azul: AlbaColor[] = [
     hex: "#7DB0C2",
     rgb: "rgb(125, 176, 194)",
     label: "rgb(51, 51, 51)",
+    page: 169,
+    section: 4,
   },
   {
     name: "Aguas Ondulantes",
@@ -15640,6 +15808,8 @@ const azul: AlbaColor[] = [
     hex: "#6CABD6",
     rgb: "rgb(108, 171, 214)",
     label: "rgb(51, 51, 51)",
+    page: 182,
+    section: 3,
   },
   {
     name: "Pelourinho",
@@ -15647,6 +15817,8 @@ const azul: AlbaColor[] = [
     hex: "#57B7DD",
     rgb: "rgb(87, 183, 221)",
     label: "rgb(51, 51, 51)",
+    page: 174,
+    section: 4,
   },
   {
     name: "Costa Oceánica",
@@ -15654,6 +15826,8 @@ const azul: AlbaColor[] = [
     hex: "#5DB2CF",
     rgb: "rgb(93, 178, 207)",
     label: "rgb(51, 51, 51)",
+    page: 168,
+    section: 3,
   },
   {
     name: "Azul Majestuoso",
@@ -15668,6 +15842,8 @@ const azul: AlbaColor[] = [
     hex: "#769DC2",
     rgb: "rgb(118, 157, 194)",
     label: "rgb(51, 51, 51)",
+    page: 181,
+    section: 4,
   },
   {
     name: "Azul Portuario",
@@ -15682,6 +15858,8 @@ const azul: AlbaColor[] = [
     hex: "#49B6CE",
     rgb: "rgb(73, 182, 206)",
     label: "rgb(51, 51, 51)",
+    page: 163,
+    section: 5,
   },
   {
     name: "Hortensia Perfumada",
@@ -15696,6 +15874,8 @@ const azul: AlbaColor[] = [
     hex: "#57A3D1",
     rgb: "rgb(87, 163, 209)",
     label: "rgb(51, 51, 51)",
+    page: 182,
+    section: 4,
   },
   {
     name: "Bouquet de Lavanda",
@@ -15706,17 +15886,12 @@ const azul: AlbaColor[] = [
   },
   {
     name: "Azul Informal",
-    code: "",
-    hex: "#67A0C1",
-    rgb: "rgb(103, 160, 193)",
-    label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Azul Informal",
     code: "04BB 34/244",
     hex: "#67A0C1",
     rgb: "rgb(103, 160, 193)",
     label: "rgb(51, 51, 51)",
+    page: 176,
+    section: 4,
   },
   {
     name: "Azul Pim",
@@ -15724,6 +15899,8 @@ const azul: AlbaColor[] = [
     hex: "#38B1DB",
     rgb: "rgb(56, 177, 219)",
     label: "rgb(51, 51, 51)",
+    page: 173,
+    section: 4,
   },
   {
     name: "Aguas Limpias",
@@ -15731,6 +15908,8 @@ const azul: AlbaColor[] = [
     hex: "#5C9BCC",
     rgb: "rgb(92, 155, 204)",
     label: "rgb(51, 51, 51)",
+    page: 183,
+    section: 4,
   },
   {
     name: "Noche Estrellada",
@@ -15745,6 +15924,8 @@ const azul: AlbaColor[] = [
     hex: "#38B9CD",
     rgb: "rgb(56, 185, 205)",
     label: "rgb(51, 51, 51)",
+    page: 161,
+    section: 4,
   },
   {
     name: "Azul de la Tarde",
@@ -15773,6 +15954,8 @@ const azul: AlbaColor[] = [
     hex: "#718EB4",
     rgb: "rgb(113, 142, 180)",
     label: "rgb(51, 51, 51)",
+    page: 186,
+    section: 5,
   },
   {
     name: "Cielo Náutico",
@@ -15787,6 +15970,8 @@ const azul: AlbaColor[] = [
     hex: "#39AFC9",
     rgb: "rgb(57, 175, 201)",
     label: "rgb(51, 51, 51)",
+    page: 162,
+    section: 5,
   },
   {
     name: "Puerto Oculto",
@@ -15794,6 +15979,8 @@ const azul: AlbaColor[] = [
     hex: "#599FB7",
     rgb: "rgb(89, 159, 183)",
     label: "rgb(51, 51, 51)",
+    page: 169,
+    section: 5,
   },
   {
     name: "Lavanda Artístico",
@@ -15801,6 +15988,8 @@ const azul: AlbaColor[] = [
     hex: "#628CC0",
     rgb: "rgb(98, 140, 192)",
     label: "rgb(51, 51, 51)",
+    page: 185,
+    section: 5,
   },
   {
     name: "Espiral Onírica",
@@ -15808,6 +15997,8 @@ const azul: AlbaColor[] = [
     hex: "#6790B3",
     rgb: "rgb(103, 144, 179)",
     label: "rgb(51, 51, 51)",
+    page: 180,
+    section: 4,
   },
   {
     name: "Vuelo Espiritual",
@@ -15829,6 +16020,8 @@ const azul: AlbaColor[] = [
     hex: "#519BAD",
     rgb: "rgb(81, 155, 173)",
     label: "rgb(51, 51, 51)",
+    page: 164,
+    section: 5,
   },
   {
     name: "Efecto Amatista",
@@ -15843,6 +16036,8 @@ const azul: AlbaColor[] = [
     hex: "#20A1C3",
     rgb: "rgb(32, 161, 195)",
     label: "rgb(255, 255, 255)",
+    page: 168,
+    section: 4,
   },
   {
     name: "Azul Preludio",
@@ -15857,6 +16052,8 @@ const azul: AlbaColor[] = [
     hex: "#10A1CF",
     rgb: "rgb(16, 161, 207)",
     label: "rgb(255, 255, 255)",
+    page: 174,
+    section: 5,
   },
   {
     name: "Playa Pasional",
@@ -15864,6 +16061,8 @@ const azul: AlbaColor[] = [
     hex: "#4181BA",
     rgb: "rgb(65, 129, 186)",
     label: "rgb(255, 255, 255)",
+    page: 184,
+    section: 4,
   },
   {
     name: "Flor Oceánica",
@@ -15871,6 +16070,8 @@ const azul: AlbaColor[] = [
     hex: "#4883B0",
     rgb: "rgb(72, 131, 176)",
     label: "rgb(255, 255, 255)",
+    page: 181,
+    section: 5,
   },
   {
     name: "Azul Portugués",
@@ -15885,6 +16086,8 @@ const azul: AlbaColor[] = [
     hex: "#448CA7",
     rgb: "rgb(68, 140, 167)",
     label: "rgb(255, 255, 255)",
+    page: 167,
+    section: 5,
   },
   {
     name: "Festival de Ópera",
@@ -15906,6 +16109,8 @@ const azul: AlbaColor[] = [
     hex: "#4D73A1",
     rgb: "rgb(77, 115, 161)",
     label: "rgb(255, 255, 255)",
+    page: 186,
+    section: 6,
   },
   {
     name: "Noche Tropical",
@@ -15920,6 +16125,8 @@ const azul: AlbaColor[] = [
     hex: "#009FBE",
     rgb: "rgb(0, 159, 190)",
     label: "rgb(255, 255, 255)",
+    page: 162,
+    section: 6,
   },
   {
     name: "Azul Zafiro",
@@ -15934,6 +16141,8 @@ const azul: AlbaColor[] = [
     hex: "#0097C4",
     rgb: "rgb(0, 151, 196)",
     label: "rgb(255, 255, 255)",
+    page: 173,
+    section: 5,
   },
   {
     name: "Azul Expreso",
@@ -15948,6 +16157,8 @@ const azul: AlbaColor[] = [
     hex: "#00A1B8",
     rgb: "rgb(0, 161, 184)",
     label: "rgb(255, 255, 255)",
+    page: 161,
+    section: 5,
   },
   {
     name: "Azul Cabalgata",
@@ -15955,6 +16166,8 @@ const azul: AlbaColor[] = [
     hex: "#1B80B8",
     rgb: "rgb(27, 128, 184)",
     label: "rgb(255, 255, 255)",
+    page: 182,
+    section: 5,
   },
   {
     name: "Sirena de Policía",
@@ -15962,6 +16175,8 @@ const azul: AlbaColor[] = [
     hex: "#3573AB",
     rgb: "rgb(53, 115, 171)",
     label: "rgb(255, 255, 255)",
+    page: 184,
+    section: 5,
   },
   {
     name: "Azul Campeón",
@@ -15983,6 +16198,8 @@ const azul: AlbaColor[] = [
     hex: "#008FB5",
     rgb: "rgb(0, 143, 181)",
     label: "rgb(255, 255, 255)",
+    page: 168,
+    section: 5,
   },
   {
     name: "Movimiento del Viento",
@@ -15990,6 +16207,8 @@ const azul: AlbaColor[] = [
     hex: "#0087BD",
     rgb: "rgb(0, 135, 189)",
     label: "rgb(255, 255, 255)",
+    page: 174,
+    section: 6,
   },
   {
     name: "Mar Índigo",
@@ -15997,6 +16216,8 @@ const azul: AlbaColor[] = [
     hex: "#1883A7",
     rgb: "rgb(24, 131, 167)",
     label: "rgb(255, 255, 255)",
+    page: 172,
+    section: 5,
   },
   {
     name: "Sensación Neptuno",
@@ -16004,6 +16225,8 @@ const azul: AlbaColor[] = [
     hex: "#0095AC",
     rgb: "rgb(0, 149, 172)",
     label: "rgb(255, 255, 255)",
+    page: 161,
+    section: 6,
   },
   {
     name: "Calma Mediterránea",
@@ -16011,6 +16234,8 @@ const azul: AlbaColor[] = [
     hex: "#0081B8",
     rgb: "rgb(0, 129, 184)",
     label: "rgb(255, 255, 255)",
+    page: 173,
+    section: 6,
   },
   {
     name: "Azul Pekín",
@@ -16018,6 +16243,8 @@ const azul: AlbaColor[] = [
     hex: "#008DAC",
     rgb: "rgb(0, 141, 172)",
     label: "rgb(255, 255, 255)",
+    page: 163,
+    section: 6,
   },
   {
     name: "Azul Real",
@@ -16025,6 +16252,8 @@ const azul: AlbaColor[] = [
     hex: "#007CB6",
     rgb: "rgb(0, 124, 182)",
     label: "rgb(255, 255, 255)",
+    page: 175,
+    section: 5,
   },
   {
     name: "Zafiro Intenso",
@@ -16046,6 +16275,8 @@ const azul: AlbaColor[] = [
     hex: "#1B7694",
     rgb: "rgb(27, 118, 148)",
     label: "rgb(255, 255, 255)",
+    page: 169,
+    section: 6,
   },
   {
     name: "Azul Celeste Fusión",
@@ -16060,6 +16291,8 @@ const azul: AlbaColor[] = [
     hex: "#00839D",
     rgb: "rgb(0, 131, 157)",
     label: "rgb(255, 255, 255)",
+    page: 162,
+    section: 7,
   },
   {
     name: "Sangre Real *",
@@ -16074,6 +16307,8 @@ const azul: AlbaColor[] = [
     hex: "#007C9A",
     rgb: "rgb(0, 124, 154)",
     label: "rgb(255, 255, 255)",
+    page: 163,
+    section: 7,
   },
   {
     name: "Tormenta Eléctrica",
@@ -16081,6 +16316,8 @@ const azul: AlbaColor[] = [
     hex: "#006AA8",
     rgb: "rgb(0, 106, 168)",
     label: "rgb(255, 255, 255)",
+    page: 183,
+    section: 5,
   },
   {
     name: "Aguas Caribeñas",
@@ -16088,6 +16325,8 @@ const azul: AlbaColor[] = [
     hex: "#00779B",
     rgb: "rgb(0, 119, 155)",
     label: "rgb(255, 255, 255)",
+    page: 168,
+    section: 6,
   },
   {
     name: "Reino",
@@ -16095,6 +16334,8 @@ const azul: AlbaColor[] = [
     hex: "#165F9C",
     rgb: "rgb(22, 95, 156)",
     label: "rgb(255, 255, 255)",
+    page: 185,
+    section: 6,
   },
   {
     name: "Sentimiento Fabuloso",
@@ -16102,6 +16343,8 @@ const azul: AlbaColor[] = [
     hex: "#006B9F",
     rgb: "rgb(0, 107, 159)",
     label: "rgb(255, 255, 255)",
+    page: 174,
+    section: 7,
   },
   {
     name: "Navíos en el Mar",
@@ -16109,6 +16352,8 @@ const azul: AlbaColor[] = [
     hex: "#006B9B",
     rgb: "rgb(0, 107, 155)",
     label: "rgb(255, 255, 255)",
+    page: 173,
+    section: 7,
   },
   {
     name: "Planetario",
@@ -16116,6 +16361,8 @@ const azul: AlbaColor[] = [
     hex: "#007096",
     rgb: "rgb(0, 112, 150)",
     label: "rgb(255, 255, 255)",
+    page: 172,
+    section: 6,
   },
   {
     name: "Zafiro *",
@@ -16144,6 +16391,8 @@ const azul: AlbaColor[] = [
     hex: "#1C5789",
     rgb: "rgb(28, 87, 137)",
     label: "rgb(255, 255, 255)",
+    page: 185,
+    section: 7,
   },
   {
     name: "Orgullo Marcial",
@@ -16151,6 +16400,8 @@ const azul: AlbaColor[] = [
     hex: "#0A6C84",
     rgb: "rgb(10, 108, 132)",
     label: "rgb(255, 255, 255)",
+    page: 167,
+    section: 6,
   },
   {
     name: "Deslumbrante Zafiro",
@@ -16158,6 +16409,8 @@ const azul: AlbaColor[] = [
     hex: "#106086",
     rgb: "rgb(16, 96, 134)",
     label: "rgb(255, 255, 255)",
+    page: 172,
+    section: 7,
   },
   {
     name: "Navegantes",
@@ -16165,6 +16418,8 @@ const azul: AlbaColor[] = [
     hex: "#006392",
     rgb: "rgb(0, 99, 146)",
     label: "rgb(255, 255, 255)",
+    page: 175,
+    section: 6,
   },
   {
     name: "Era de los Jets",
@@ -16172,6 +16427,8 @@ const azul: AlbaColor[] = [
     hex: "#006B88",
     rgb: "rgb(0, 107, 136)",
     label: "rgb(255, 255, 255)",
+    page: 168,
+    section: 7,
   },
   {
     name: "Lapislázuli",
@@ -16186,6 +16443,8 @@ const azul: AlbaColor[] = [
     hex: "#005B8E",
     rgb: "rgb(0, 91, 142)",
     label: "rgb(255, 255, 255)",
+    page: 182,
+    section: 6,
   },
   {
     name: "Azul Bajo Cero",
@@ -16193,6 +16452,8 @@ const azul: AlbaColor[] = [
     hex: "#1C4B75",
     rgb: "rgb(28, 75, 117)",
     label: "rgb(255, 255, 255)",
+    page: 181,
+    section: 7,
   },
   {
     name: "Azul Fantasma",
@@ -16200,6 +16461,8 @@ const azul: AlbaColor[] = [
     hex: "#224373",
     rgb: "rgb(34, 67, 115)",
     label: "rgb(255, 255, 255)",
+    page: 186,
+    section: 7,
   },
   {
     name: "Alas de Colibrí",
@@ -16207,6 +16470,8 @@ const azul: AlbaColor[] = [
     hex: "#005482",
     rgb: "rgb(0, 84, 130)",
     label: "rgb(255, 255, 255)",
+    page: 183,
+    section: 6,
   },
   {
     name: "Azul Blazer",
@@ -16214,6 +16479,8 @@ const azul: AlbaColor[] = [
     hex: "#005184",
     rgb: "rgb(0, 81, 132)",
     label: "rgb(255, 255, 255)",
+    page: 181,
+    section: 6,
   },
   {
     name: "Fuerte Presencia",
@@ -16228,6 +16495,8 @@ const azul: AlbaColor[] = [
     hex: "#024A7F",
     rgb: "rgb(2, 74, 127)",
     label: "rgb(255, 255, 255)",
+    page: 184,
+    section: 6,
   },
   {
     name: "Gota Azul",
@@ -16235,6 +16504,8 @@ const azul: AlbaColor[] = [
     hex: "#004E76",
     rgb: "rgb(0, 78, 118)",
     label: "rgb(255, 255, 255)",
+    page: 182,
+    section: 7,
   },
   {
     name: "Azul Imaginado",
@@ -16242,6 +16513,8 @@ const azul: AlbaColor[] = [
     hex: "#0C4C62",
     rgb: "rgb(12, 76, 98)",
     label: "rgb(255, 255, 255)",
+    page: 169,
+    section: 7,
   },
   {
     name: "Cristales Marítimos",
@@ -16265,6 +16538,8 @@ const azul: AlbaColor[] = [
     hex: "#E0EAEF",
     rgb: "rgb(224, 234, 239)",
     label: "rgb(51, 51, 51)",
+    page: 178,
+    section: 1,
   },
   {
     name: "Bruma de Escarcha",
@@ -16295,6 +16570,8 @@ const azul: AlbaColor[] = [
     hex: "#D6DDE5",
     rgb: "rgb(214, 221, 229)",
     label: "rgb(51, 51, 51)",
+    page: 179,
+    section: 2,
   },
   {
     name: "Flor Alpina",
@@ -16323,6 +16600,8 @@ const azul: AlbaColor[] = [
     hex: "#D7DBE1",
     rgb: "rgb(215, 219, 225)",
     label: "rgb(51, 51, 51)",
+    page: 187,
+    section: 1,
   },
   {
     name: "Neblina Azul",
@@ -16360,6 +16639,8 @@ const azul: AlbaColor[] = [
     hex: "#CBDEE8",
     rgb: "rgb(203, 222, 232)",
     label: "rgb(51, 51, 51)",
+    page: 171,
+    section: 1,
   },
   {
     name: "Frío Súbito",
@@ -16367,13 +16648,8 @@ const azul: AlbaColor[] = [
     hex: "#D1DDE3",
     rgb: "rgb(209, 221, 227)",
     label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Frío Súbito",
-    code: "",
-    hex: "#D1DDE3",
-    rgb: "rgb(209, 221, 227)",
-    label: "rgb(51, 51, 51)",
+    page: 170,
+    section: 1,
   },
   {
     name: "Toque Matinal",
@@ -16381,6 +16657,8 @@ const azul: AlbaColor[] = [
     hex: "#D0DDE3",
     rgb: "rgb(208, 221, 227)",
     label: "rgb(51, 51, 51)",
+    page: 177,
+    section: 1,
   },
   {
     name: "Vuelo de Palomas",
@@ -16388,6 +16666,8 @@ const azul: AlbaColor[] = [
     hex: "#CFDBE5",
     rgb: "rgb(207, 219, 229)",
     label: "rgb(51, 51, 51)",
+    page: 178,
+    section: 2,
   },
   {
     name: "Sueño Eterno",
@@ -16458,6 +16738,8 @@ const azul: AlbaColor[] = [
     hex: "#C3CFDA",
     rgb: "rgb(195, 207, 218)",
     label: "rgb(51, 51, 51)",
+    page: 179,
+    section: 3,
   },
   {
     name: "Mar Azul",
@@ -16472,6 +16754,8 @@ const azul: AlbaColor[] = [
     hex: "#B0CFDD",
     rgb: "rgb(176, 207, 221)",
     label: "rgb(51, 51, 51)",
+    page: 172,
+    section: 2,
   },
   {
     name: "Sensación Feliz",
@@ -16479,6 +16763,8 @@ const azul: AlbaColor[] = [
     hex: "#B4CBD9",
     rgb: "rgb(180, 203, 217)",
     label: "rgb(51, 51, 51)",
+    page: 177,
+    section: 2,
   },
   {
     name: "Hortensia Azul",
@@ -16486,6 +16772,8 @@ const azul: AlbaColor[] = [
     hex: "#B0CED9",
     rgb: "rgb(176, 206, 217)",
     label: "rgb(51, 51, 51)",
+    page: 167,
+    section: 3,
   },
   {
     name: "Azul Finlandés",
@@ -16500,6 +16788,8 @@ const azul: AlbaColor[] = [
     hex: "#ADC8D7",
     rgb: "rgb(173, 200, 215)",
     label: "rgb(51, 51, 51)",
+    page: 171,
+    section: 3,
   },
   {
     name: "Sombra de Duda",
@@ -16514,13 +16804,8 @@ const azul: AlbaColor[] = [
     hex: "#B8C7CC",
     rgb: "rgb(184, 199, 204)",
     label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Viento Suave",
-    code: "",
-    hex: "#B8C7CC",
-    rgb: "rgb(184, 199, 204)",
-    label: "rgb(51, 51, 51)",
+    page: 166,
+    section: 3,
   },
   {
     name: "Brillo de Hadas",
@@ -16528,6 +16813,8 @@ const azul: AlbaColor[] = [
     hex: "#B2C2D5",
     rgb: "rgb(178, 194, 213)",
     label: "rgb(51, 51, 51)",
+    page: 179,
+    section: 4,
   },
   {
     name: "Sombra Lunar",
@@ -16556,13 +16843,8 @@ const azul: AlbaColor[] = [
     hex: "#B0C4D3",
     rgb: "rgb(176, 196, 211)",
     label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Coulis de Arándano",
-    code: "",
-    hex: "#B0C4D3",
-    rgb: "rgb(176, 196, 211)",
-    label: "rgb(51, 51, 51)",
+    page: 178,
+    section: 3,
   },
   {
     name: "Cristalería",
@@ -16577,6 +16859,8 @@ const azul: AlbaColor[] = [
     hex: "#AFC5D0",
     rgb: "rgb(175, 197, 208)",
     label: "rgb(51, 51, 51)",
+    page: 170,
+    section: 3,
   },
   {
     name: "Fascinación",
@@ -16601,17 +16885,12 @@ const azul: AlbaColor[] = [
   },
   {
     name: "Mediterráneo",
-    code: "",
-    hex: "#99BDD0",
-    rgb: "rgb(153, 189, 208)",
-    label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Mediterráneo",
     code: "90BG 50/157",
     hex: "#99BDD0",
     rgb: "rgb(153, 189, 208)",
     label: "rgb(51, 51, 51)",
+    page: 172,
+    section: 3,
   },
   {
     name: "Encantamiento",
@@ -16640,6 +16919,8 @@ const azul: AlbaColor[] = [
     hex: "#9DB1D0",
     rgb: "rgb(157, 177, 208)",
     label: "rgb(51, 51, 51)",
+    page: 186,
+    section: 3,
   },
   {
     name: "Azul Otoñal",
@@ -16654,6 +16935,8 @@ const azul: AlbaColor[] = [
     hex: "#98B6CB",
     rgb: "rgb(152, 182, 203)",
     label: "rgb(51, 51, 51)",
+    page: 177,
+    section: 3,
   },
   {
     name: "Azul Barroco",
@@ -16661,6 +16944,8 @@ const azul: AlbaColor[] = [
     hex: "#94B5C2",
     rgb: "rgb(148, 181, 194)",
     label: "rgb(51, 51, 51)",
+    page: 166,
+    section: 4,
   },
   {
     name: "Azul Fénix",
@@ -16668,13 +16953,8 @@ const azul: AlbaColor[] = [
     hex: "#9AB4BA",
     rgb: "rgb(154, 180, 186)",
     label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Pico De Neblina",
-    code: "",
-    hex: "#99AFBC",
-    rgb: "rgb(153, 175, 188)",
-    label: "rgb(51, 51, 51)",
+    page: 165,
+    section: 3,
   },
   {
     name: "Pico de Neblina",
@@ -16682,6 +16962,8 @@ const azul: AlbaColor[] = [
     hex: "#99AFBC",
     rgb: "rgb(153, 175, 188)",
     label: "rgb(51, 51, 51)",
+    page: 170,
+    section: 4,
   },
   {
     name: "Silueta",
@@ -16724,13 +17006,8 @@ const azul: AlbaColor[] = [
     hex: "#83A8C1",
     rgb: "rgb(131, 168, 193)",
     label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Caramelo de Arándano",
-    code: "",
-    hex: "#83A8C1",
-    rgb: "rgb(131, 168, 193)",
-    label: "rgb(51, 51, 51)",
+    page: 177,
+    section: 4,
   },
   {
     name: "Caída de la Noche",
@@ -16745,6 +17022,8 @@ const azul: AlbaColor[] = [
     hex: "#7CA8BF",
     rgb: "rgb(124, 168, 191)",
     label: "rgb(51, 51, 51)",
+    page: 171,
+    section: 4,
   },
   {
     name: "Azul Camarote",
@@ -16752,6 +17031,8 @@ const azul: AlbaColor[] = [
     hex: "#8599B4",
     rgb: "rgb(133, 153, 180)",
     label: "rgb(51, 51, 51)",
+    page: 187,
+    section: 4,
   },
   {
     name: "Azul Cashmere",
@@ -16773,13 +17054,8 @@ const azul: AlbaColor[] = [
     hex: "#819BB4",
     rgb: "rgb(129, 155, 180)",
     label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Blueberry",
-    code: "",
-    hex: "#819BB4",
-    rgb: "rgb(129, 155, 180)",
-    label: "rgb(51, 51, 51)",
+    page: 179,
+    section: 5,
   },
   {
     name: "Azul Florentino",
@@ -16794,6 +17070,8 @@ const azul: AlbaColor[] = [
     hex: "#8699AD",
     rgb: "rgb(134, 153, 173)",
     label: "rgb(51, 51, 51)",
+    page: 178,
+    section: 4,
   },
   {
     name: "Mar Balcánico",
@@ -16801,6 +17079,8 @@ const azul: AlbaColor[] = [
     hex: "#7F9DA5",
     rgb: "rgb(127, 157, 165)",
     label: "rgb(51, 51, 51)",
+    page: 165,
+    section: 4,
   },
   {
     name: "Orilla del Lago Azul",
@@ -16808,6 +17088,8 @@ const azul: AlbaColor[] = [
     hex: "#7D98A6",
     rgb: "rgb(125, 152, 166)",
     label: "rgb(51, 51, 51)",
+    page: 170,
+    section: 5,
   },
   {
     name: "Azul Tibet",
@@ -16815,6 +17097,8 @@ const azul: AlbaColor[] = [
     hex: "#6C97B3",
     rgb: "rgb(108, 151, 179)",
     label: "rgb(51, 51, 51)",
+    page: 177,
+    section: 5,
   },
   {
     name: "Más Allá del Azul",
@@ -16843,6 +17127,8 @@ const azul: AlbaColor[] = [
     hex: "#6794A5",
     rgb: "rgb(103, 148, 165)",
     label: "rgb(51, 51, 51)",
+    page: 166,
+    section: 5,
   },
   {
     name: "Firmamento",
@@ -16850,6 +17136,8 @@ const azul: AlbaColor[] = [
     hex: "#5E93AD",
     rgb: "rgb(94, 147, 173)",
     label: "rgb(51, 51, 51)",
+    page: 172,
+    section: 4,
   },
   {
     name: "Violeta de Praga",
@@ -16871,6 +17159,8 @@ const azul: AlbaColor[] = [
     hex: "#5C7291",
     rgb: "rgb(92, 114, 145)",
     label: "rgb(255, 255, 255)",
+    page: 187,
+    section: 5,
   },
   {
     name: "Azul Noble",
@@ -16878,6 +17168,8 @@ const azul: AlbaColor[] = [
     hex: "#567195",
     rgb: "rgb(86, 113, 149)",
     label: "rgb(255, 255, 255)",
+    page: 187,
+    section: 6,
   },
   {
     name: "Marea",
@@ -16885,6 +17177,8 @@ const azul: AlbaColor[] = [
     hex: "#547C87",
     rgb: "rgb(84, 124, 135)",
     label: "rgb(255, 255, 255)",
+    page: 165,
+    section: 5,
   },
   {
     name: "Lluvia de Medianoche",
@@ -16892,6 +17186,8 @@ const azul: AlbaColor[] = [
     hex: "#58748B",
     rgb: "rgb(88, 116, 139)",
     label: "rgb(255, 255, 255)",
+    page: 177,
+    section: 6,
   },
   {
     name: "Vía Láctea",
@@ -16920,6 +17216,8 @@ const azul: AlbaColor[] = [
     hex: "#457697",
     rgb: "rgb(69, 118, 151)",
     label: "rgb(255, 255, 255)",
+    page: 176,
+    section: 5,
   },
   {
     name: "Vals Azul",
@@ -16927,6 +17225,8 @@ const azul: AlbaColor[] = [
     hex: "#57718A",
     rgb: "rgb(87, 113, 138)",
     label: "rgb(255, 255, 255)",
+    page: 178,
+    section: 5,
   },
   {
     name: "Azul Índigo",
@@ -16934,6 +17234,8 @@ const azul: AlbaColor[] = [
     hex: "#3A7D9A",
     rgb: "rgb(58, 125, 154)",
     label: "rgb(255, 255, 255)",
+    page: 171,
+    section: 5,
   },
   {
     name: "Costa Salvaje",
@@ -16941,13 +17243,8 @@ const azul: AlbaColor[] = [
     hex: "#537686",
     rgb: "rgb(83, 118, 134)",
     label: "rgb(255, 255, 255)",
-  },
-  {
-    name: "Río de Piedra",
-    code: "",
-    hex: "#587381",
-    rgb: "rgb(88, 115, 129)",
-    label: "rgb(255, 255, 255)",
+    page: 166,
+    section: 6,
   },
   {
     name: "Río de Piedra",
@@ -16955,6 +17252,8 @@ const azul: AlbaColor[] = [
     hex: "#587381",
     rgb: "rgb(88, 115, 129)",
     label: "rgb(255, 255, 255)",
+    page: 170,
+    section: 6,
   },
   {
     name: "Azul Oceánico",
@@ -16962,6 +17261,8 @@ const azul: AlbaColor[] = [
     hex: "#338193",
     rgb: "rgb(51, 129, 147)",
     label: "rgb(255, 255, 255)",
+    page: 164,
+    section: 6,
   },
   {
     name: "Brillo de Zafiro",
@@ -16983,6 +17284,8 @@ const azul: AlbaColor[] = [
     hex: "#446A8B",
     rgb: "rgb(68, 106, 139)",
     label: "rgb(255, 255, 255)",
+    page: 179,
+    section: 6,
   },
   {
     name: "Gris Elemental",
@@ -17018,6 +17321,8 @@ const azul: AlbaColor[] = [
     hex: "#3A698D",
     rgb: "rgb(58, 105, 141)",
     label: "rgb(255, 255, 255)",
+    page: 180,
+    section: 5,
   },
   {
     name: "Límite Nocturno",
@@ -17046,13 +17351,8 @@ const azul: AlbaColor[] = [
     hex: "#445A66",
     rgb: "rgb(68, 90, 102)",
     label: "rgb(255, 255, 255)",
-  },
-  {
-    name: "Tempestad Inminente",
-    code: "",
-    hex: "#445A66",
-    rgb: "rgb(68, 90, 102)",
-    label: "rgb(255, 255, 255)",
+    page: 170,
+    section: 7,
   },
   {
     name: "Aguas Oceánicas",
@@ -17060,6 +17360,8 @@ const azul: AlbaColor[] = [
     hex: "#3A5E67",
     rgb: "rgb(58, 94, 103)",
     label: "rgb(255, 255, 255)",
+    page: 165,
+    section: 7,
   },
   {
     name: "Violeta Inspirado",
@@ -17095,13 +17397,8 @@ const azul: AlbaColor[] = [
     hex: "#3A5267",
     rgb: "rgb(58, 82, 103)",
     label: "rgb(255, 255, 255)",
-  },
-  {
-    name: "Neptuno Profundo",
-    code: "",
-    hex: "#3A5267",
-    rgb: "rgb(58, 82, 103)",
-    label: "rgb(255, 255, 255)",
+    page: 178,
+    section: 6,
   },
   {
     name: "Azul Cadete",
@@ -17109,6 +17406,8 @@ const azul: AlbaColor[] = [
     hex: "#136777",
     rgb: "rgb(19, 103, 119)",
     label: "rgb(255, 255, 255)",
+    page: 164,
+    section: 7,
   },
   {
     name: "Azul Reposera",
@@ -17116,6 +17415,8 @@ const azul: AlbaColor[] = [
     hex: "#1D567C",
     rgb: "rgb(29, 86, 124)",
     label: "rgb(255, 255, 255)",
+    page: 180,
+    section: 6,
   },
   {
     name: "Azul Prusia",
@@ -17123,6 +17424,8 @@ const azul: AlbaColor[] = [
     hex: "#315368",
     rgb: "rgb(49, 83, 104)",
     label: "rgb(255, 255, 255)",
+    page: 177,
+    section: 7,
   },
   {
     name: "Rendez-Vous Azul",
@@ -17130,6 +17433,8 @@ const azul: AlbaColor[] = [
     hex: "#245D6A",
     rgb: "rgb(36, 93, 106)",
     label: "rgb(255, 255, 255)",
+    page: 165,
+    section: 6,
   },
   {
     name: "Oscuridad Profunda",
@@ -17139,25 +17444,13 @@ const azul: AlbaColor[] = [
     label: "rgb(255, 255, 255)",
   },
   {
-    name: "Azul Marino Vibrante*",
-    code: "",
-    hex: "#324965",
-    rgb: "rgb(50, 73, 101)",
-    label: "rgb(255, 255, 255)",
-  },
-  {
-    name: "Azul Marino Vibrante",
-    code: "",
-    hex: "#324965",
-    rgb: "rgb(50, 73, 101)",
-    label: "rgb(255, 255, 255)",
-  },
-  {
     name: "Azul Marino Vibrante",
     code: "50BB 08/171",
     hex: "#324965",
     rgb: "rgb(50, 73, 101)",
     label: "rgb(255, 255, 255)",
+    page: 187,
+    section: 7,
   },
   {
     name: "Azul Tempestad",
@@ -17167,18 +17460,13 @@ const azul: AlbaColor[] = [
     label: "rgb(255, 255, 255)",
   },
   {
-    name: "Azul Marino Vibrante",
-    code: "",
-    hex: "#324965",
-    rgb: "rgb(50, 73, 101)",
-    label: "rgb(255, 255, 255)",
-  },
-  {
     name: "Mar Báltico",
     code: "90BG 11/262",
     hex: "#005F7D",
     rgb: "rgb(0, 95, 125)",
     label: "rgb(255, 255, 255)",
+    page: 171,
+    section: 6,
   },
   {
     name: "Azul Mediterráneo",
@@ -17186,6 +17474,8 @@ const azul: AlbaColor[] = [
     hex: "#274C68",
     rgb: "rgb(39, 76, 104)",
     label: "rgb(255, 255, 255)",
+    page: 179,
+    section: 7,
   },
   {
     name: "Noche Impenetrable",
@@ -17207,6 +17497,8 @@ const azul: AlbaColor[] = [
     hex: "#0C5C70",
     rgb: "rgb(12, 92, 112)",
     label: "rgb(255, 255, 255)",
+    page: 167,
+    section: 7,
   },
   {
     name: "Azul Neptuno",
@@ -17221,6 +17513,8 @@ const azul: AlbaColor[] = [
     hex: "#184C6E",
     rgb: "rgb(24, 76, 110)",
     label: "rgb(255, 255, 255)",
+    page: 180,
+    section: 7,
   },
   {
     name: "Pozo Profundo",
@@ -17228,6 +17522,8 @@ const azul: AlbaColor[] = [
     hex: "#314655",
     rgb: "rgb(49, 70, 85)",
     label: "rgb(255, 255, 255)",
+    page: 178,
+    section: 7,
   },
   {
     name: "Azul Relámpago",
@@ -17235,6 +17531,8 @@ const azul: AlbaColor[] = [
     hex: "#005476",
     rgb: "rgb(0, 84, 118)",
     label: "rgb(255, 255, 255)",
+    page: 176,
+    section: 6,
   },
   {
     name: "Noches de Añil",
@@ -17242,6 +17540,8 @@ const azul: AlbaColor[] = [
     hex: "#234760",
     rgb: "rgb(35, 71, 96)",
     label: "rgb(255, 255, 255)",
+    page: 175,
+    section: 7,
   },
   {
     name: "Índigo Profundo",
@@ -17263,6 +17563,8 @@ const azul: AlbaColor[] = [
     hex: "#25485C",
     rgb: "rgb(37, 72, 92)",
     label: "rgb(255, 255, 255)",
+    page: 176,
+    section: 7,
   },
   {
     name: "Índigo Profundo",
@@ -17284,6 +17586,8 @@ const azul: AlbaColor[] = [
     hex: "#233F61",
     rgb: "rgb(35, 63, 97)",
     label: "rgb(255, 255, 255)",
+    page: 184,
+    section: 7,
   },
   {
     name: "Azul Formal",
@@ -17291,6 +17595,8 @@ const azul: AlbaColor[] = [
     hex: "#00546E",
     rgb: "rgb(0, 84, 110)",
     label: "rgb(255, 255, 255)",
+    page: 171,
+    section: 7,
   },
   {
     name: "Azul Frontón",
@@ -17298,6 +17604,8 @@ const azul: AlbaColor[] = [
     hex: "#2F454D",
     rgb: "rgb(47, 69, 77)",
     label: "rgb(255, 255, 255)",
+    page: 166,
+    section: 7,
   },
   {
     name: "Océano Tranquilo *",
@@ -17305,6 +17613,8 @@ const azul: AlbaColor[] = [
     hex: "#1C3753",
     rgb: "rgb(28, 55, 83)",
     label: "rgb(255, 255, 255)",
+    page: 183,
+    section: 7,
   },
   {
     name: "Profundidad del Océano",
@@ -18253,6 +18563,8 @@ const violeta: AlbaColor[] = [
     hex: "#E4E8EC",
     rgb: "rgb(228, 232, 236)",
     label: "rgb(51, 51, 51)",
+    page: 179,
+    section: 1,
   },
   {
     name: "Ciruela Especial",
@@ -18869,6 +19181,8 @@ const neutrosFrios: AlbaColor[] = [
     hex: "#D5E1E2",
     rgb: "rgb(213, 225, 226)",
     label: "rgb(51, 51, 51)",
+    page: 165,
+    section: 1,
   },
   {
     name: "Gris Ballena",
@@ -18893,6 +19207,8 @@ const neutrosFrios: AlbaColor[] = [
     hex: "#D4DEE1",
     rgb: "rgb(212, 222, 225)",
     label: "rgb(51, 51, 51)",
+    page: 166,
+    section: 1,
   },
   {
     name: "Etéreo",
@@ -18935,6 +19251,8 @@ const neutrosFrios: AlbaColor[] = [
     hex: "#CBD7DA",
     rgb: "rgb(203, 215, 218)",
     label: "rgb(51, 51, 51)",
+    page: 166,
+    section: 2,
   },
   {
     name: "Gris Fantasma",
@@ -19026,6 +19344,8 @@ const neutrosFrios: AlbaColor[] = [
     hex: "#BBC9D0",
     rgb: "rgb(187, 201, 208)",
     label: "rgb(51, 51, 51)",
+    page: 170,
+    section: 2,
   },
   {
     name: "Plata Azulado",
@@ -20981,19 +21301,14 @@ const neutrosCalidos: AlbaColor[] = [
     hex: "#E6E9E9",
     rgb: "rgb(230, 233, 233)",
     label: "rgb(51, 51, 51)",
+    page: 184,
+    section: 1,
   },
   {
     name: "Gotas de Lluvia",
     code: "30GG 83/006",
     hex: "#E8E9E7",
     rgb: "rgb(232, 233, 231)",
-    label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Estrella Nueva",
-    code: "",
-    hex: "#E6E9E9",
-    rgb: "rgb(230, 233, 233)",
     label: "rgb(51, 51, 51)",
   },
   {
