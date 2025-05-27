@@ -699,6 +699,8 @@ const blanco: AlbaColor[] = [
     hex: "#E9E8E8",
     rgb: "rgb(233, 232, 232)",
     label: "rgb(51, 51, 51)",
+    page: 202,
+    section: 1,
   },
   {
     name: "Calma Matutina",
@@ -980,6 +982,8 @@ const blanco: AlbaColor[] = [
     hex: "#E2E5E6",
     rgb: "rgb(226, 229, 230)",
     label: "rgb(51, 51, 51)",
+    page: 188,
+    section: 1,
   },
   {
     name: "Papel Valioso",
@@ -1005,6 +1009,8 @@ const blanco: AlbaColor[] = [
     hex: "#DFE2E7",
     rgb: "rgb(223, 226, 231)",
     label: "rgb(51, 51, 51)",
+    page: 193,
+    section: 1,
   },
   {
     name: "Blanco Antiguo",
@@ -1114,6 +1120,8 @@ const blanco: AlbaColor[] = [
     hex: "#DBDDE0",
     rgb: "rgb(219, 221, 224)",
     label: "rgb(51, 51, 51)",
+    page: 189,
+    section: 1,
   },
   {
     name: "Onda Acústica",
@@ -1418,6 +1426,8 @@ const rojo: AlbaColor[] = [
     hex: "#F1DEE6",
     rgb: "rgb(241, 222, 230)",
     label: "rgb(51, 51, 51)",
+    page: 215,
+    section: 1,
   },
   {
     name: "Mousse Rosado",
@@ -1425,6 +1435,8 @@ const rojo: AlbaColor[] = [
     hex: "#EAE2E6",
     rgb: "rgb(234, 226, 230)",
     label: "rgb(51, 51, 51)",
+    page: 211,
+    section: 1,
   },
   {
     name: "Dulce Bebé",
@@ -1446,6 +1458,8 @@ const rojo: AlbaColor[] = [
     hex: "#EBDEE8",
     rgb: "rgb(235, 222, 232)",
     label: "rgb(51, 51, 51)",
+    page: 210,
+    section: 1,
   },
   {
     name: "Porcelana Rosada",
@@ -1462,6 +1476,8 @@ const rojo: AlbaColor[] = [
     hex: "#F5D8E1",
     rgb: "rgb(245, 216, 225)",
     label: "rgb(51, 51, 51)",
+    page: 222,
+    section: 1,
   },
   {
     name: "Sensación de Rosas",
@@ -1505,6 +1521,8 @@ const rojo: AlbaColor[] = [
     hex: "#E8DAE5",
     rgb: "rgb(232, 218, 229)",
     label: "rgb(51, 51, 51)",
+    page: 214,
+    section: 1,
   },
   {
     name: "Rosa Brumoso",
@@ -1521,6 +1539,8 @@ const rojo: AlbaColor[] = [
     hex: "#F1D5DD",
     rgb: "rgb(241, 213, 221)",
     label: "rgb(51, 51, 51)",
+    page: 220,
+    section: 2,
   },
   {
     name: "Rosa Romántico",
@@ -1551,6 +1571,8 @@ const rojo: AlbaColor[] = [
     hex: "#EDD3DF",
     rgb: "rgb(237, 211, 223)",
     label: "rgb(51, 51, 51)",
+    page: 221,
+    section: 2,
   },
   {
     name: "Almendra Portuguesa",
@@ -1558,6 +1580,8 @@ const rojo: AlbaColor[] = [
     hex: "#E8DADD",
     rgb: "rgb(232, 218, 221)",
     label: "rgb(51, 51, 51)",
+    page: 219,
+    section: 1,
   },
   {
     name: "Helado",
@@ -1565,6 +1589,8 @@ const rojo: AlbaColor[] = [
     hex: "#EBD2E2",
     rgb: "rgb(235, 210, 226)",
     label: "rgb(51, 51, 51)",
+    page: 215,
+    section: 2,
   },
   {
     name: "Playa Rosa",
@@ -1604,6 +1630,8 @@ const rojo: AlbaColor[] = [
     hex: "#E4D2E2",
     rgb: "rgb(228, 210, 226)",
     label: "rgb(51, 51, 51)",
+    page: 210,
+    section: 2,
   },
   {
     name: "Frutilla Sensacional",
@@ -1611,6 +1639,8 @@ const rojo: AlbaColor[] = [
     hex: "#E5D1E0",
     rgb: "rgb(229, 209, 224)",
     label: "rgb(51, 51, 51)",
+    page: 212,
+    section: 1,
   },
   {
     name: "Crema de Papaya",
@@ -1677,6 +1707,8 @@ const rojo: AlbaColor[] = [
     hex: "#E5CED4",
     rgb: "rgb(229, 206, 212)",
     label: "rgb(51, 51, 51)",
+    page: 219,
+    section: 2,
   },
   {
     name: "Helado de Cereza",
@@ -1684,6 +1716,8 @@ const rojo: AlbaColor[] = [
     hex: "#E8C4DB",
     rgb: "rgb(232, 196, 219)",
     label: "rgb(51, 51, 51)",
+    page: 213,
+    section: 2,
   },
   {
     name: "Dama de Honor",
@@ -1725,6 +1759,8 @@ const rojo: AlbaColor[] = [
     hex: "#E0C0DA",
     rgb: "rgb(224, 192, 218)",
     label: "rgb(51, 51, 51)",
+    page: 212,
+    section: 2,
   },
   {
     name: "Rosa Vivo",
@@ -1732,6 +1768,8 @@ const rojo: AlbaColor[] = [
     hex: "#E8BDD3",
     rgb: "rgb(232, 189, 211)",
     label: "rgb(51, 51, 51)",
+    page: 215,
+    section: 3,
   },
   {
     name: "Reflejo Vivaz",
@@ -1762,6 +1800,8 @@ const rojo: AlbaColor[] = [
     hex: "#E4B6D6",
     rgb: "rgb(228, 182, 214)",
     label: "rgb(51, 51, 51)",
+    page: 213,
+    section: 3,
   },
   {
     name: "Rosa Nevada",
@@ -1787,6 +1827,8 @@ const rojo: AlbaColor[] = [
     hex: "#E9B9CA",
     rgb: "rgb(233, 185, 202)",
     label: "rgb(51, 51, 51)",
+    page: 220,
+    section: 3,
   },
   {
     name: "Rosa Fantástico",
@@ -1812,6 +1854,8 @@ const rojo: AlbaColor[] = [
     hex: "#E3B6C2",
     rgb: "rgb(227, 182, 194)",
     label: "rgb(51, 51, 51)",
+    page: 222,
+    section: 2,
   },
   {
     name: "Bailarina",
@@ -1819,6 +1863,8 @@ const rojo: AlbaColor[] = [
     hex: "#D6BBC9",
     rgb: "rgb(214, 187, 201)",
     label: "rgb(51, 51, 51)",
+    page: 216,
+    section: 2,
   },
   {
     name: "Rosa Retro",
@@ -1826,6 +1872,8 @@ const rojo: AlbaColor[] = [
     hex: "#D8B6C3",
     rgb: "rgb(216, 182, 195)",
     label: "rgb(51, 51, 51)",
+    page: 219,
+    section: 3,
   },
   {
     name: "Rosa Chispeante",
@@ -1860,6 +1908,8 @@ const rojo: AlbaColor[] = [
     hex: "#E6A7BE",
     rgb: "rgb(230, 167, 190)",
     label: "rgb(51, 51, 51)",
+    page: 220,
+    section: 4,
   },
   {
     name: "Cactus Dalia",
@@ -1876,6 +1926,8 @@ const rojo: AlbaColor[] = [
     hex: "#E7A8BA",
     rgb: "rgb(231, 168, 186)",
     label: "rgb(51, 51, 51)",
+    page: 222,
+    section: 3,
   },
   {
     name: "Rosa Valentín",
@@ -1883,6 +1935,8 @@ const rojo: AlbaColor[] = [
     hex: "#E1A5C3",
     rgb: "rgb(225, 165, 195)",
     label: "rgb(51, 51, 51)",
+    page: 221,
+    section: 3,
   },
   {
     name: "Atmósfera Romántica",
@@ -1947,6 +2001,8 @@ const rojo: AlbaColor[] = [
     hex: "#D699B9",
     rgb: "rgb(214, 153, 185)",
     label: "rgb(51, 51, 51)",
+    page: 215,
+    section: 4,
   },
   {
     name: "Bahía de Coral",
@@ -1979,6 +2035,8 @@ const rojo: AlbaColor[] = [
     hex: "#CB9DB0",
     rgb: "rgb(203, 157, 176)",
     label: "rgb(51, 51, 51)",
+    page: 219,
+    section: 4,
   },
   {
     name: "Rosa Florida",
@@ -1993,6 +2051,8 @@ const rojo: AlbaColor[] = [
     hex: "#CB94B3",
     rgb: "rgb(203, 148, 179)",
     label: "rgb(51, 51, 51)",
+    page: 214,
+    section: 4,
   },
   {
     name: "Rosa Exótico",
@@ -2000,6 +2060,8 @@ const rojo: AlbaColor[] = [
     hex: "#D185B7",
     rgb: "rgb(209, 133, 183)",
     label: "rgb(51, 51, 51)",
+    page: 213,
+    section: 4,
   },
   {
     name: "Rosa Silvestre",
@@ -2016,6 +2078,8 @@ const rojo: AlbaColor[] = [
     hex: "#C29AAF",
     rgb: "rgb(194, 154, 175)",
     label: "rgb(51, 51, 51)",
+    page: 216,
+    section: 3,
   },
   {
     name: "Crema de Frutilla",
@@ -2053,6 +2117,8 @@ const rojo: AlbaColor[] = [
     hex: "#D486AC",
     rgb: "rgb(212, 134, 172)",
     label: "rgb(51, 51, 51)",
+    page: 221,
+    section: 4,
   },
   {
     name: "Destino",
@@ -2126,6 +2192,8 @@ const rojo: AlbaColor[] = [
     hex: "#D97A99",
     rgb: "rgb(217, 122, 153)",
     label: "rgb(51, 51, 51)",
+    page: 222,
+    section: 4,
   },
   {
     name: "Princesa Sensacional",
@@ -2156,6 +2224,8 @@ const rojo: AlbaColor[] = [
     hex: "#D37998",
     rgb: "rgb(211, 121, 152)",
     label: "rgb(51, 51, 51)",
+    page: 222,
+    section: 5,
   },
   {
     name: "Rosa Bella",
@@ -2172,6 +2242,8 @@ const rojo: AlbaColor[] = [
     hex: "#BF7AA4",
     rgb: "rgb(191, 122, 164)",
     label: "rgb(51, 51, 51)",
+    page: 215,
+    section: 5,
   },
   {
     name: "Rouge Rojo",
@@ -2186,6 +2258,8 @@ const rojo: AlbaColor[] = [
     hex: "#B88599",
     rgb: "rgb(184, 133, 153)",
     label: "rgb(51, 51, 51)",
+    page: 219,
+    section: 5,
   },
   {
     name: "Flamenco Real",
@@ -2225,6 +2299,8 @@ const rojo: AlbaColor[] = [
     hex: "#C1669D",
     rgb: "rgb(193, 102, 157)",
     label: "rgb(51, 51, 51)",
+    page: 213,
+    section: 5,
   },
   {
     name: "Tutti Frutti",
@@ -2239,6 +2315,8 @@ const rojo: AlbaColor[] = [
     hex: "#BB7191",
     rgb: "rgb(187, 113, 145)",
     label: "rgb(51, 51, 51)",
+    page: 220,
+    section: 5,
   },
   {
     name: "Lápiz Labial",
@@ -2253,6 +2331,8 @@ const rojo: AlbaColor[] = [
     hex: "#AE7995",
     rgb: "rgb(174, 121, 149)",
     label: "rgb(51, 51, 51)",
+    page: 216,
+    section: 4,
   },
   {
     name: "Serenata Satinada",
@@ -2338,6 +2418,8 @@ const rojo: AlbaColor[] = [
     hex: "#AE639A",
     rgb: "rgb(174, 99, 154)",
     label: "rgb(255, 255, 255)",
+    page: 212,
+    section: 7,
   },
   {
     name: "Rubí Suave",
@@ -2368,6 +2450,8 @@ const rojo: AlbaColor[] = [
     hex: "#A86D86",
     rgb: "rgb(168, 109, 134)",
     label: "rgb(51, 51, 51)",
+    page: 219,
+    section: 6,
   },
   {
     name: "Secreto",
@@ -2398,6 +2482,8 @@ const rojo: AlbaColor[] = [
     hex: "#A8658C",
     rgb: "rgb(168, 101, 140)",
     label: "rgb(255, 255, 255)",
+    page: 214,
+    section: 5,
   },
   {
     name: "Batido Rosado",
@@ -2405,6 +2491,8 @@ const rojo: AlbaColor[] = [
     hex: "#BE5385",
     rgb: "rgb(190, 83, 133)",
     label: "rgb(255, 255, 255)",
+    page: 221,
+    section: 5,
   },
   {
     name: "Luz Deslumbrante",
@@ -2412,6 +2500,8 @@ const rojo: AlbaColor[] = [
     hex: "#AD588F",
     rgb: "rgb(173, 88, 143)",
     label: "rgb(255, 255, 255)",
+    page: 213,
+    section: 6,
   },
   {
     name: "Flor de Madroño",
@@ -2433,6 +2523,8 @@ const rojo: AlbaColor[] = [
     hex: "#B8537B",
     rgb: "rgb(184, 83, 123)",
     label: "rgb(255, 255, 255)",
+    page: 222,
+    section: 6,
   },
   {
     name: "Extravagante",
@@ -2440,6 +2532,8 @@ const rojo: AlbaColor[] = [
     hex: "#B34F83",
     rgb: "rgb(179, 79, 131)",
     label: "rgb(255, 255, 255)",
+    page: 215,
+    section: 6,
   },
   {
     name: "Magnificencia",
@@ -2454,6 +2548,8 @@ const rojo: AlbaColor[] = [
     hex: "#A25A85",
     rgb: "rgb(162, 90, 133)",
     label: "rgb(255, 255, 255)",
+    page: 214,
+    section: 6,
   },
   {
     name: "Frutilla",
@@ -2502,6 +2598,8 @@ const rojo: AlbaColor[] = [
     hex: "#9D4F84",
     rgb: "rgb(157, 79, 132)",
     label: "rgb(255, 255, 255)",
+    page: 213,
+    section: 7,
   },
   {
     name: "Estilo Románico",
@@ -2534,6 +2632,8 @@ const rojo: AlbaColor[] = [
     hex: "#915D79",
     rgb: "rgb(145, 93, 121)",
     label: "rgb(255, 255, 255)",
+    page: 216,
+    section: 5,
   },
   {
     name: "Reflejo de Rosas",
@@ -2550,6 +2650,8 @@ const rojo: AlbaColor[] = [
     hex: "#A14C72",
     rgb: "rgb(161, 76, 114)",
     label: "rgb(255, 255, 255)",
+    page: 221,
+    section: 6,
   },
   {
     name: "Pasión Coral",
@@ -2639,6 +2741,8 @@ const rojo: AlbaColor[] = [
     hex: "#92486C",
     rgb: "rgb(146, 72, 108)",
     label: "rgb(255, 255, 255)",
+    page: 220,
+    section: 6,
   },
   {
     name: "Rosa Osado",
@@ -2655,6 +2759,8 @@ const rojo: AlbaColor[] = [
     hex: "#82516F",
     rgb: "rgb(130, 81, 111)",
     label: "rgb(255, 255, 255)",
+    page: 217,
+    section: 6,
   },
   {
     name: "Pitanga Helada *",
@@ -2705,6 +2811,8 @@ const rojo: AlbaColor[] = [
     hex: "#983660",
     rgb: "rgb(152, 54, 96)",
     label: "rgb(255, 255, 255)",
+    page: 222,
+    section: 7,
   },
   {
     name: "Cereza *",
@@ -2721,6 +2829,8 @@ const rojo: AlbaColor[] = [
     hex: "#834662",
     rgb: "rgb(131, 70, 98)",
     label: "rgb(255, 255, 255)",
+    page: 219,
+    section: 7,
   },
   {
     name: "Mimos de Frutos Rojos",
@@ -2728,6 +2838,8 @@ const rojo: AlbaColor[] = [
     hex: "#863B67",
     rgb: "rgb(134, 59, 103)",
     label: "rgb(255, 255, 255)",
+    page: 215,
+    section: 7,
   },
   {
     name: "Sorpresa Merlot",
@@ -2753,6 +2865,8 @@ const rojo: AlbaColor[] = [
     hex: "#744962",
     rgb: "rgb(116, 73, 98)",
     label: "rgb(255, 255, 255)",
+    page: 216,
+    section: 6,
   },
   {
     name: "Fiesta de la Cereza *",
@@ -2792,6 +2906,8 @@ const rojo: AlbaColor[] = [
     hex: "#7D3761",
     rgb: "rgb(125, 55, 97)",
     label: "rgb(255, 255, 255)",
+    page: 214,
+    section: 7,
   },
   {
     name: "Morado Intenso",
@@ -2817,6 +2933,8 @@ const rojo: AlbaColor[] = [
     hex: "#7D395A",
     rgb: "rgb(125, 57, 90)",
     label: "rgb(255, 255, 255)",
+    page: 221,
+    section: 7,
   },
   {
     name: "Lápiz Labial Rojo",
@@ -3178,6 +3296,8 @@ const rojo: AlbaColor[] = [
     hex: "#E1D1D7",
     rgb: "rgb(225, 209, 215)",
     label: "rgb(51, 51, 51)",
+    page: 216,
+    section: 1,
   },
   {
     name: "Perla de Princesa",
@@ -3208,6 +3328,8 @@ const rojo: AlbaColor[] = [
     hex: "#DED1D5",
     rgb: "rgb(222, 209, 213)",
     label: "rgb(51, 51, 51)",
+    page: 217,
+    section: 2,
   },
   {
     name: "Rosa Ballet",
@@ -3240,6 +3362,8 @@ const rojo: AlbaColor[] = [
     hex: "#DECDD0",
     rgb: "rgb(222, 205, 208)",
     label: "rgb(51, 51, 51)",
+    page: 218,
+    section: 1,
   },
   {
     name: "Cielo Ardiente",
@@ -3314,6 +3438,8 @@ const rojo: AlbaColor[] = [
     hex: "#DEC7CB",
     rgb: "rgb(222, 199, 203)",
     label: "rgb(51, 51, 51)",
+    page: 218,
+    section: 2,
   },
   {
     name: "Poesía",
@@ -3390,6 +3516,8 @@ const rojo: AlbaColor[] = [
     hex: "#CDB9C3",
     rgb: "rgb(205, 185, 195)",
     label: "rgb(51, 51, 51)",
+    page: 217,
+    section: 3,
   },
   {
     name: "Rosa Restauración",
@@ -3406,6 +3534,8 @@ const rojo: AlbaColor[] = [
     hex: "#D0B5BB",
     rgb: "rgb(208, 181, 187)",
     label: "rgb(51, 51, 51)",
+    page: 218,
+    section: 3,
   },
   {
     name: "Inspiración Poética",
@@ -3544,6 +3674,8 @@ const rojo: AlbaColor[] = [
     hex: "#C199A3",
     rgb: "rgb(193, 153, 163)",
     label: "rgb(51, 51, 51)",
+    page: 218,
+    section: 4,
   },
   {
     name: "Fulgor Africano",
@@ -3581,6 +3713,8 @@ const rojo: AlbaColor[] = [
     hex: "#B195A4",
     rgb: "rgb(177, 149, 164)",
     label: "rgb(51, 51, 51)",
+    page: 217,
+    section: 4,
   },
   {
     name: "Santa Rosa",
@@ -3678,6 +3812,8 @@ const rojo: AlbaColor[] = [
     hex: "#A77987",
     rgb: "rgb(167, 121, 135)",
     label: "rgb(51, 51, 51)",
+    page: 218,
+    section: 5,
   },
   {
     name: "Rosa Madera",
@@ -3724,6 +3860,8 @@ const rojo: AlbaColor[] = [
     hex: "#977287",
     rgb: "rgb(151, 114, 135)",
     label: "rgb(255, 255, 255)",
+    page: 217,
+    section: 5,
   },
   {
     name: "Tierra de Vino",
@@ -3754,6 +3892,8 @@ const rojo: AlbaColor[] = [
     hex: "#976876",
     rgb: "rgb(151, 104, 118)",
     label: "rgb(255, 255, 255)",
+    page: 218,
+    section: 6,
   },
   {
     name: "Rosa Capri",
@@ -3839,6 +3979,8 @@ const rojo: AlbaColor[] = [
     hex: "#7D596E",
     rgb: "rgb(125, 89, 110)",
     label: "rgb(255, 255, 255)",
+    page: 217,
+    section: 7,
   },
   {
     name: "Rosa Suave",
@@ -3967,6 +4109,8 @@ const rojo: AlbaColor[] = [
     hex: "#6A4253",
     rgb: "rgb(106, 66, 83)",
     label: "rgb(255, 255, 255)",
+    page: 218,
+    section: 7,
   },
   {
     name: "Aroma de Vino",
@@ -4060,6 +4204,8 @@ const rojo: AlbaColor[] = [
     hex: "#603250",
     rgb: "rgb(96, 50, 80)",
     label: "rgb(255, 255, 255)",
+    page: 216,
+    section: 7,
   },
   {
     name: "Berenjena Profundo",
@@ -4067,6 +4213,8 @@ const rojo: AlbaColor[] = [
     hex: "#5E354C",
     rgb: "rgb(94, 53, 76)",
     label: "rgb(255, 255, 255)",
+    page: 220,
+    section: 7,
   },
   {
     name: "Pájaro de Fuego",
@@ -15181,6 +15329,8 @@ const azul: AlbaColor[] = [
     hex: "#DCDFE4",
     rgb: "rgb(220, 223, 228)",
     label: "rgb(51, 51, 51)",
+    page: 194,
+    section: 1,
   },
   {
     name: "Perla del Pacífico",
@@ -15263,6 +15413,8 @@ const azul: AlbaColor[] = [
     hex: "#CFD7E3",
     rgb: "rgb(207, 215, 227)",
     label: "rgb(51, 51, 51)",
+    page: 192,
+    section: 1,
   },
   {
     name: "Lavanda Crepúsculo",
@@ -15297,6 +15449,8 @@ const azul: AlbaColor[] = [
     hex: "#CED3E3",
     rgb: "rgb(206, 211, 227)",
     label: "rgb(51, 51, 51)",
+    page: 193,
+    section: 2,
   },
   {
     name: "Oceánico",
@@ -15404,6 +15558,8 @@ const azul: AlbaColor[] = [
     hex: "#C3CDE1",
     rgb: "rgb(195, 205, 225)",
     label: "rgb(51, 51, 51)",
+    page: 192,
+    section: 2,
   },
   {
     name: "Azul Seda",
@@ -15438,6 +15594,8 @@ const azul: AlbaColor[] = [
     hex: "#BBCEE3",
     rgb: "rgb(187, 206, 227)",
     label: "rgb(51, 51, 51)",
+    page: 191,
+    section: 1,
   },
   {
     name: "Fresco Matinal",
@@ -15587,6 +15745,8 @@ const azul: AlbaColor[] = [
     hex: "#ABBCDC",
     rgb: "rgb(171, 188, 220)",
     label: "rgb(51, 51, 51)",
+    page: 192,
+    section: 3,
   },
   {
     name: "Chiffon Azul",
@@ -15630,6 +15790,8 @@ const azul: AlbaColor[] = [
     hex: "#A3BADA",
     rgb: "rgb(163, 186, 218)",
     label: "rgb(51, 51, 51)",
+    page: 191,
+    section: 2,
   },
   {
     name: "Danubio",
@@ -15667,6 +15829,8 @@ const azul: AlbaColor[] = [
     hex: "#9CB2DF",
     rgb: "rgb(156, 178, 223)",
     label: "rgb(51, 51, 51)",
+    page: 192,
+    section: 4,
   },
   {
     name: "Azul Feriado",
@@ -15692,6 +15856,8 @@ const azul: AlbaColor[] = [
     hex: "#97B1DA",
     rgb: "rgb(151, 177, 218)",
     label: "rgb(51, 51, 51)",
+    page: 191,
+    section: 3,
   },
   {
     name: "Virtuoso",
@@ -15835,6 +16001,8 @@ const azul: AlbaColor[] = [
     hex: "#8998BC",
     rgb: "rgb(137, 152, 188)",
     label: "rgb(51, 51, 51)",
+    page: 190,
+    section: 4,
   },
   {
     name: "Azul Pervinca",
@@ -15883,6 +16051,8 @@ const azul: AlbaColor[] = [
     hex: "#7090C9",
     rgb: "rgb(112, 144, 201)",
     label: "rgb(51, 51, 51)",
+    page: 192,
+    section: 5,
   },
   {
     name: "Azul Informal",
@@ -15940,6 +16110,8 @@ const azul: AlbaColor[] = [
     hex: "#6D8DBE",
     rgb: "rgb(109, 141, 190)",
     label: "rgb(51, 51, 51)",
+    page: 191,
+    section: 4,
   },
   {
     name: "Eléctrico",
@@ -16029,6 +16201,8 @@ const azul: AlbaColor[] = [
     hex: "#567EBE",
     rgb: "rgb(86, 126, 190)",
     label: "rgb(255, 255, 255)",
+    page: 191,
+    section: 5,
   },
   {
     name: "Olas de Hawaii",
@@ -16095,6 +16269,8 @@ const azul: AlbaColor[] = [
     hex: "#5270A7",
     rgb: "rgb(82, 112, 167)",
     label: "rgb(255, 255, 255)",
+    page: 192,
+    section: 6,
   },
   {
     name: "Cobalto Intenso",
@@ -16384,6 +16560,8 @@ const azul: AlbaColor[] = [
     hex: "#3F4F72",
     rgb: "rgb(63, 79, 114)",
     label: "rgb(255, 255, 255)",
+    page: 194,
+    section: 7,
   },
   {
     name: "Boda Azul",
@@ -16488,6 +16666,8 @@ const azul: AlbaColor[] = [
     hex: "#17407D",
     rgb: "rgb(23, 64, 125)",
     label: "rgb(255, 255, 255)",
+    page: 191,
+    section: 6,
   },
   {
     name: "Azul Puro",
@@ -16563,6 +16743,8 @@ const azul: AlbaColor[] = [
     hex: "#DBDCE1",
     rgb: "rgb(219, 220, 225)",
     label: "rgb(51, 51, 51)",
+    page: 190,
+    section: 1,
   },
   {
     name: "Diente de León Claro",
@@ -16689,6 +16871,8 @@ const azul: AlbaColor[] = [
     hex: "#CED1D9",
     rgb: "rgb(206, 209, 217)",
     label: "rgb(51, 51, 51)",
+    page: 189,
+    section: 2,
   },
   {
     name: "Copos de Nube",
@@ -16703,6 +16887,8 @@ const azul: AlbaColor[] = [
     hex: "#C9CFD8",
     rgb: "rgb(201, 207, 216)",
     label: "rgb(51, 51, 51)",
+    page: 188,
+    section: 2,
   },
   {
     name: "Azul de Jarrón",
@@ -16836,6 +17022,8 @@ const azul: AlbaColor[] = [
     hex: "#B9C1CD",
     rgb: "rgb(185, 193, 205)",
     label: "rgb(51, 51, 51)",
+    page: 188,
+    section: 3,
   },
   {
     name: "Coulis de Arándano",
@@ -16864,17 +17052,12 @@ const azul: AlbaColor[] = [
   },
   {
     name: "Fascinación",
-    code: "",
-    hex: "#B1B6C4",
-    rgb: "rgb(177, 182, 196)",
-    label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Fascinación",
     code: "70BB 49/082",
     hex: "#B1B6C4",
     rgb: "rgb(177, 182, 196)",
     label: "rgb(51, 51, 51)",
+    page: 189,
+    section: 3,
   },
   {
     name: "Brillo Estelar",
@@ -16985,6 +17168,8 @@ const azul: AlbaColor[] = [
     hex: "#9CA5B6",
     rgb: "rgb(156, 165, 182)",
     label: "rgb(51, 51, 51)",
+    page: 188,
+    section: 4,
   },
   {
     name: "Escollera",
@@ -17015,6 +17200,8 @@ const azul: AlbaColor[] = [
     hex: "#979FB2",
     rgb: "rgb(151, 159, 178)",
     label: "rgb(51, 51, 51)",
+    page: 189,
+    section: 4,
   },
   {
     name: "Azul Windsor",
@@ -17120,6 +17307,8 @@ const azul: AlbaColor[] = [
     hex: "#7F8A9C",
     rgb: "rgb(127, 138, 156)",
     label: "rgb(51, 51, 51)",
+    page: 188,
+    section: 5,
   },
   {
     name: "Invierno Azul",
@@ -17152,6 +17341,8 @@ const azul: AlbaColor[] = [
     hex: "#707992",
     rgb: "rgb(112, 121, 146)",
     label: "rgb(255, 255, 255)",
+    page: 189,
+    section: 5,
   },
   {
     name: "Deleite Denim",
@@ -17209,6 +17400,8 @@ const azul: AlbaColor[] = [
     hex: "#626F83",
     rgb: "rgb(98, 111, 131)",
     label: "rgb(255, 255, 255)",
+    page: 188,
+    section: 6,
   },
   {
     name: "Aguas de Islandia",
@@ -17307,6 +17500,8 @@ const azul: AlbaColor[] = [
     hex: "#4E6185",
     rgb: "rgb(78, 97, 133)",
     label: "rgb(255, 255, 255)",
+    page: 189,
+    section: 6,
   },
   {
     name: "Llamas Azules",
@@ -17369,6 +17564,8 @@ const azul: AlbaColor[] = [
     hex: "#454C6C",
     rgb: "rgb(69, 76, 108)",
     label: "rgb(255, 255, 255)",
+    page: 196,
+    section: 7,
   },
   {
     name: "Trato Real",
@@ -17390,6 +17587,8 @@ const azul: AlbaColor[] = [
     hex: "#354E76",
     rgb: "rgb(53, 78, 118)",
     label: "rgb(255, 255, 255)",
+    page: 192,
+    section: 7,
   },
   {
     name: "Neptuno Profundo",
@@ -17442,6 +17641,8 @@ const azul: AlbaColor[] = [
     hex: "#3B4966",
     rgb: "rgb(59, 73, 102)",
     label: "rgb(255, 255, 255)",
+    page: 189,
+    section: 7,
   },
   {
     name: "Azul Marino Vibrante",
@@ -17483,6 +17684,8 @@ const azul: AlbaColor[] = [
     hex: "#37465C",
     rgb: "rgb(55, 70, 92)",
     label: "rgb(255, 255, 255)",
+    page: 188,
+    section: 7,
   },
   {
     name: "Ola Real",
@@ -17632,6 +17835,8 @@ const violeta: AlbaColor[] = [
     hex: "#EEE9EB",
     rgb: "rgb(238, 233, 235)",
     label: "rgb(51, 51, 51)",
+    page: 221,
+    section: 1,
   },
   {
     name: "Espliego Apasionado",
@@ -17646,6 +17851,8 @@ const violeta: AlbaColor[] = [
     hex: "#EDE8EA",
     rgb: "rgb(237, 232, 234)",
     label: "rgb(51, 51, 51)",
+    page: 220,
+    section: 1,
   },
   {
     name: "Renovación",
@@ -17660,6 +17867,8 @@ const violeta: AlbaColor[] = [
     hex: "#E6E2E6",
     rgb: "rgb(230, 226, 230)",
     label: "rgb(51, 51, 51)",
+    page: 205,
+    section: 1,
   },
   {
     name: "Rosa Bebé",
@@ -17667,6 +17876,8 @@ const violeta: AlbaColor[] = [
     hex: "#EEDBE5",
     rgb: "rgb(238, 219, 229)",
     label: "rgb(51, 51, 51)",
+    page: 213,
+    section: 1,
   },
   {
     name: "Gota de Violeta",
@@ -17681,6 +17892,8 @@ const violeta: AlbaColor[] = [
     hex: "#E6DDE6",
     rgb: "rgb(230, 221, 230)",
     label: "rgb(51, 51, 51)",
+    page: 205,
+    section: 2,
   },
   {
     name: "Clavel",
@@ -17688,6 +17901,8 @@ const violeta: AlbaColor[] = [
     hex: "#EBD3E2",
     rgb: "rgb(235, 211, 226)",
     label: "rgb(51, 51, 51)",
+    page: 214,
+    section: 2,
   },
   {
     name: "Perfume Lila",
@@ -17695,6 +17910,8 @@ const violeta: AlbaColor[] = [
     hex: "#E5DBE0",
     rgb: "rgb(229, 219, 224)",
     label: "rgb(51, 51, 51)",
+    page: 209,
+    section: 2,
   },
   {
     name: "Nieve Lila",
@@ -17702,6 +17919,8 @@ const violeta: AlbaColor[] = [
     hex: "#E0DDE1",
     rgb: "rgb(224, 221, 225)",
     label: "rgb(51, 51, 51)",
+    page: 201,
+    section: 1,
   },
   {
     name: "Toque de Pensamiento",
@@ -17709,6 +17928,8 @@ const violeta: AlbaColor[] = [
     hex: "#DDDAE4",
     rgb: "rgb(221, 218, 228)",
     label: "rgb(51, 51, 51)",
+    page: 198,
+    section: 1,
   },
   {
     name: "Lluvia de Amatistas",
@@ -17716,13 +17937,8 @@ const violeta: AlbaColor[] = [
     hex: "#DBD8E7",
     rgb: "rgb(219, 216, 231)",
     label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Sensación Violeta",
-    code: "",
-    hex: "#D6D9E7",
-    rgb: "rgb(214, 217, 231)",
-    label: "rgb(51, 51, 51)",
+    page: 199,
+    section: 1,
   },
   {
     name: "Sensación Violeta",
@@ -17730,6 +17946,8 @@ const violeta: AlbaColor[] = [
     hex: "#D6D9E7",
     rgb: "rgb(214, 217, 231)",
     label: "rgb(51, 51, 51)",
+    page: 200,
+    section: 1,
   },
   {
     name: "Popurrí",
@@ -17744,6 +17962,8 @@ const violeta: AlbaColor[] = [
     hex: "#DDD2DF",
     rgb: "rgb(221, 210, 223)",
     label: "rgb(51, 51, 51)",
+    page: 204,
+    section: 2,
   },
   {
     name: "Poesía Lírica",
@@ -17751,6 +17971,8 @@ const violeta: AlbaColor[] = [
     hex: "#E1D1DC",
     rgb: "rgb(225, 209, 220)",
     label: "rgb(51, 51, 51)",
+    page: 211,
+    section: 2,
   },
   {
     name: "Colinas de Brezos",
@@ -17758,6 +17980,8 @@ const violeta: AlbaColor[] = [
     hex: "#D8D5E0",
     rgb: "rgb(216, 213, 224)",
     label: "rgb(51, 51, 51)",
+    page: 202,
+    section: 3,
   },
   {
     name: "Nubes Púrpuras",
@@ -17765,6 +17989,8 @@ const violeta: AlbaColor[] = [
     hex: "#D8D2E0",
     rgb: "rgb(216, 210, 224)",
     label: "rgb(51, 51, 51)",
+    page: 203,
+    section: 2,
   },
   {
     name: "Sonrisa Púrpura",
@@ -17772,6 +17998,8 @@ const violeta: AlbaColor[] = [
     hex: "#D4CFE3",
     rgb: "rgb(212, 207, 227)",
     label: "rgb(51, 51, 51)",
+    page: 201,
+    section: 2,
   },
   {
     name: "Anochecer",
@@ -17779,6 +18007,8 @@ const violeta: AlbaColor[] = [
     hex: "#DCD1D9",
     rgb: "rgb(220, 209, 217)",
     label: "rgb(51, 51, 51)",
+    page: 209,
+    section: 3,
   },
   {
     name: "Toque de Violeta",
@@ -17786,6 +18016,8 @@ const violeta: AlbaColor[] = [
     hex: "#D4D1DF",
     rgb: "rgb(212, 209, 223)",
     label: "rgb(51, 51, 51)",
+    page: 198,
+    section: 2,
   },
   {
     name: "Lila Precioso",
@@ -17793,6 +18025,8 @@ const violeta: AlbaColor[] = [
     hex: "#D8D0D9",
     rgb: "rgb(216, 208, 217)",
     label: "rgb(51, 51, 51)",
+    page: 206,
+    section: 2,
   },
   {
     name: "Blanco Espliego",
@@ -17800,6 +18034,8 @@ const violeta: AlbaColor[] = [
     hex: "#D1D2DC",
     rgb: "rgb(209, 210, 220)",
     label: "rgb(51, 51, 51)",
+    page: 195,
+    section: 1,
   },
   {
     name: "Diamante Rosa",
@@ -17807,6 +18043,8 @@ const violeta: AlbaColor[] = [
     hex: "#DCC5DD",
     rgb: "rgb(220, 197, 221)",
     label: "rgb(51, 51, 51)",
+    page: 210,
+    section: 3,
   },
   {
     name: "Rosa Leyenda",
@@ -17821,6 +18059,8 @@ const violeta: AlbaColor[] = [
     hex: "#D6C8DE",
     rgb: "rgb(214, 200, 222)",
     label: "rgb(51, 51, 51)",
+    page: 205,
+    section: 3,
   },
   {
     name: "Rosado Fuerte",
@@ -17828,6 +18068,8 @@ const violeta: AlbaColor[] = [
     hex: "#E6BDD9",
     rgb: "rgb(230, 189, 217)",
     label: "rgb(51, 51, 51)",
+    page: 214,
+    section: 3,
   },
   {
     name: "Dedalera Violeta",
@@ -17835,6 +18077,8 @@ const violeta: AlbaColor[] = [
     hex: "#CDCCE1",
     rgb: "rgb(205, 204, 225)",
     label: "rgb(51, 51, 51)",
+    page: 199,
+    section: 2,
   },
   {
     name: "Toque de Lila",
@@ -17842,6 +18086,8 @@ const violeta: AlbaColor[] = [
     hex: "#C8CAE4",
     rgb: "rgb(200, 202, 228)",
     label: "rgb(51, 51, 51)",
+    page: 200,
+    section: 2,
   },
   {
     name: "Huevo de Pascua",
@@ -17856,6 +18102,8 @@ const violeta: AlbaColor[] = [
     hex: "#D5BAD8",
     rgb: "rgb(213, 186, 216)",
     label: "rgb(51, 51, 51)",
+    page: 210,
+    section: 4,
   },
   {
     name: "Toque de Púrpura",
@@ -17870,6 +18118,8 @@ const violeta: AlbaColor[] = [
     hex: "#C7C9D5",
     rgb: "rgb(199, 201, 213)",
     label: "rgb(51, 51, 51)",
+    page: 196,
+    section: 3,
   },
   {
     name: "Rosa Tecno",
@@ -17877,6 +18127,8 @@ const violeta: AlbaColor[] = [
     hex: "#DDB1D4",
     rgb: "rgb(221, 177, 212)",
     label: "rgb(51, 51, 51)",
+    page: 212,
+    section: 3,
   },
   {
     name: "Malva de Carnaval",
@@ -17884,6 +18136,8 @@ const violeta: AlbaColor[] = [
     hex: "#C6C0D9",
     rgb: "rgb(198, 192, 217)",
     label: "rgb(51, 51, 51)",
+    page: 201,
+    section: 3,
   },
   {
     name: "Lavanda Suave",
@@ -17898,6 +18152,8 @@ const violeta: AlbaColor[] = [
     hex: "#BEC1D6",
     rgb: "rgb(190, 193, 214)",
     label: "rgb(51, 51, 51)",
+    page: 194,
+    section: 2,
   },
   {
     name: "Lila Primaveral",
@@ -17905,6 +18161,8 @@ const violeta: AlbaColor[] = [
     hex: "#C8B7D6",
     rgb: "rgb(200, 183, 214)",
     label: "rgb(51, 51, 51)",
+    page: 204,
+    section: 3,
   },
   {
     name: "Sueño Rosado",
@@ -17912,6 +18170,8 @@ const violeta: AlbaColor[] = [
     hex: "#D2B6CC",
     rgb: "rgb(210, 182, 204)",
     label: "rgb(51, 51, 51)",
+    page: 211,
+    section: 3,
   },
   {
     name: "Bouquet de Lilas",
@@ -17919,6 +18179,8 @@ const violeta: AlbaColor[] = [
     hex: "#BDBBDA",
     rgb: "rgb(189, 187, 218)",
     label: "rgb(51, 51, 51)",
+    page: 199,
+    section: 3,
   },
   {
     name: "Notable",
@@ -17926,6 +18188,8 @@ const violeta: AlbaColor[] = [
     hex: "#BCBED5",
     rgb: "rgb(188, 190, 213)",
     label: "rgb(51, 51, 51)",
+    page: 195,
+    section: 2,
   },
   {
     name: "Campos de Espliegos",
@@ -17933,6 +18197,8 @@ const violeta: AlbaColor[] = [
     hex: "#C9B9C9",
     rgb: "rgb(201, 185, 201)",
     label: "rgb(51, 51, 51)",
+    page: 209,
+    section: 4,
   },
   {
     name: "Uva Suave",
@@ -17940,13 +18206,8 @@ const violeta: AlbaColor[] = [
     hex: "#C3BACE",
     rgb: "rgb(195, 186, 206)",
     label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Campos de Espliegos",
-    code: "",
-    hex: "#C9B9C9",
-    rgb: "rgb(201, 185, 201)",
-    label: "rgb(51, 51, 51)",
+    page: 203,
+    section: 3,
   },
   {
     name: "Sensualidad",
@@ -17954,6 +18215,8 @@ const violeta: AlbaColor[] = [
     hex: "#C6B9CA",
     rgb: "rgb(198, 185, 202)",
     label: "rgb(51, 51, 51)",
+    page: 206,
+    section: 3,
   },
   {
     name: "Flor de Maracujá",
@@ -17961,6 +18224,8 @@ const violeta: AlbaColor[] = [
     hex: "#BCB7D5",
     rgb: "rgb(188, 183, 213)",
     label: "rgb(51, 51, 51)",
+    page: 201,
+    section: 4,
   },
   {
     name: "Espléndido Lila",
@@ -17968,6 +18233,8 @@ const violeta: AlbaColor[] = [
     hex: "#B8BCD4",
     rgb: "rgb(184, 188, 212)",
     label: "rgb(51, 51, 51)",
+    page: 193,
+    section: 3,
   },
   {
     name: "Lago Brumoso",
@@ -17975,6 +18242,8 @@ const violeta: AlbaColor[] = [
     hex: "#BEBACF",
     rgb: "rgb(190, 186, 207)",
     label: "rgb(51, 51, 51)",
+    page: 198,
+    section: 3,
   },
   {
     name: "Rosas Híbridas",
@@ -17982,6 +18251,8 @@ const violeta: AlbaColor[] = [
     hex: "#D6A4CC",
     rgb: "rgb(214, 164, 204)",
     label: "rgb(51, 51, 51)",
+    page: 212,
+    section: 4,
   },
   {
     name: "Brezo en Flor",
@@ -17989,6 +18260,8 @@ const violeta: AlbaColor[] = [
     hex: "#AEB5D4",
     rgb: "rgb(174, 181, 212)",
     label: "rgb(51, 51, 51)",
+    page: 194,
+    section: 3,
   },
   {
     name: "Primavera Lila",
@@ -17996,6 +18269,8 @@ const violeta: AlbaColor[] = [
     hex: "#BCA5CC",
     rgb: "rgb(188, 165, 204)",
     label: "rgb(51, 51, 51)",
+    page: 205,
+    section: 4,
   },
   {
     name: "Frambuesa Negra",
@@ -18010,6 +18285,8 @@ const violeta: AlbaColor[] = [
     hex: "#AEB0C8",
     rgb: "rgb(174, 176, 200)",
     label: "rgb(51, 51, 51)",
+    page: 195,
+    section: 3,
   },
   {
     name: "Magia de Noche",
@@ -18024,6 +18301,8 @@ const violeta: AlbaColor[] = [
     hex: "#A6AFC8",
     rgb: "rgb(166, 175, 200)",
     label: "rgb(51, 51, 51)",
+    page: 190,
+    section: 3,
   },
   {
     name: "Lirio Rosa",
@@ -18031,6 +18310,8 @@ const violeta: AlbaColor[] = [
     hex: "#C98EBD",
     rgb: "rgb(201, 142, 189)",
     label: "rgb(51, 51, 51)",
+    page: 212,
+    section: 5,
   },
   {
     name: "Violeta Verona",
@@ -18038,6 +18319,8 @@ const violeta: AlbaColor[] = [
     hex: "#BC93C1",
     rgb: "rgb(188, 147, 193)",
     label: "rgb(51, 51, 51)",
+    page: 210,
+    section: 5,
   },
   {
     name: "Brezo",
@@ -18052,6 +18335,8 @@ const violeta: AlbaColor[] = [
     hex: "#A79DC8",
     rgb: "rgb(167, 157, 200)",
     label: "rgb(51, 51, 51)",
+    page: 200,
+    section: 3,
   },
   {
     name: "Lavanda Imperial",
@@ -18059,6 +18344,8 @@ const violeta: AlbaColor[] = [
     hex: "#97A1CF",
     rgb: "rgb(151, 161, 207)",
     label: "rgb(51, 51, 51)",
+    page: 193,
+    section: 4,
   },
   {
     name: "Dignidad",
@@ -18066,6 +18353,8 @@ const violeta: AlbaColor[] = [
     hex: "#AD94C2",
     rgb: "rgb(173, 148, 194)",
     label: "rgb(51, 51, 51)",
+    page: 204,
+    section: 4,
   },
   {
     name: "Tierra de Sueños",
@@ -18073,6 +18362,8 @@ const violeta: AlbaColor[] = [
     hex: "#B897AF",
     rgb: "rgb(184, 151, 175)",
     label: "rgb(51, 51, 51)",
+    page: 211,
+    section: 4,
   },
   {
     name: "Crepúsculo",
@@ -18080,6 +18371,8 @@ const violeta: AlbaColor[] = [
     hex: "#AF98B0",
     rgb: "rgb(175, 152, 176)",
     label: "rgb(51, 51, 51)",
+    page: 209,
+    section: 5,
   },
   {
     name: "Púrpura Parisino",
@@ -18101,6 +18394,8 @@ const violeta: AlbaColor[] = [
     hex: "#A398B4",
     rgb: "rgb(163, 152, 180)",
     label: "rgb(51, 51, 51)",
+    page: 203,
+    section: 4,
   },
   {
     name: "Orquídea Pura",
@@ -18115,6 +18410,8 @@ const violeta: AlbaColor[] = [
     hex: "#9C98B6",
     rgb: "rgb(156, 152, 182)",
     label: "rgb(51, 51, 51)",
+    page: 198,
+    section: 4,
   },
   {
     name: "Princesa Púrpura",
@@ -18122,6 +18419,8 @@ const violeta: AlbaColor[] = [
     hex: "#9799B8",
     rgb: "rgb(151, 153, 184)",
     label: "rgb(51, 51, 51)",
+    page: 195,
+    section: 4,
   },
   {
     name: "Pasaje del Viñedo",
@@ -18129,6 +18428,8 @@ const violeta: AlbaColor[] = [
     hex: "#A493AC",
     rgb: "rgb(164, 147, 172)",
     label: "rgb(51, 51, 51)",
+    page: 206,
+    section: 4,
   },
   {
     name: "Púrpura Especial",
@@ -18136,6 +18437,8 @@ const violeta: AlbaColor[] = [
     hex: "#9390BE",
     rgb: "rgb(147, 144, 190)",
     label: "rgb(51, 51, 51)",
+    page: 199,
+    section: 4,
   },
   {
     name: "Ilusión",
@@ -18143,6 +18446,8 @@ const violeta: AlbaColor[] = [
     hex: "#A185B7",
     rgb: "rgb(161, 133, 183)",
     label: "rgb(51, 51, 51)",
+    page: 204,
+    section: 5,
   },
   {
     name: "Glicina en Flor",
@@ -18157,6 +18462,8 @@ const violeta: AlbaColor[] = [
     hex: "#B973A8",
     rgb: "rgb(185, 115, 168)",
     label: "rgb(51, 51, 51)",
+    page: 212,
+    section: 6,
   },
   {
     name: "Lavanda Salvaje",
@@ -18178,6 +18485,8 @@ const violeta: AlbaColor[] = [
     hex: "#8D84B5",
     rgb: "rgb(141, 132, 181)",
     label: "rgb(51, 51, 51)",
+    page: 200,
+    section: 4,
   },
   {
     name: "Vívida Lavanda",
@@ -18185,6 +18494,8 @@ const violeta: AlbaColor[] = [
     hex: "#8B81BA",
     rgb: "rgb(139, 129, 186)",
     label: "rgb(51, 51, 51)",
+    page: 199,
+    section: 5,
   },
   {
     name: "Toque Violeta",
@@ -18192,6 +18503,8 @@ const violeta: AlbaColor[] = [
     hex: "#848DB5",
     rgb: "rgb(132, 141, 181)",
     label: "rgb(51, 51, 51)",
+    page: 194,
+    section: 4,
   },
   {
     name: "Rebelión Real",
@@ -18199,6 +18512,8 @@ const violeta: AlbaColor[] = [
     hex: "#7586C6",
     rgb: "rgb(117, 134, 198)",
     label: "rgb(51, 51, 51)",
+    page: 193,
+    section: 5,
   },
   {
     name: "Grandeza",
@@ -18220,6 +18535,8 @@ const violeta: AlbaColor[] = [
     hex: "#9477AC",
     rgb: "rgb(148, 119, 172)",
     label: "rgb(51, 51, 51)",
+    page: 205,
+    section: 5,
   },
   {
     name: "Lila Esplendoroso",
@@ -18227,6 +18544,8 @@ const violeta: AlbaColor[] = [
     hex: "#8085AE",
     rgb: "rgb(128, 133, 174)",
     label: "rgb(51, 51, 51)",
+    page: 194,
+    section: 5,
   },
   {
     name: "Confite",
@@ -18234,6 +18553,8 @@ const violeta: AlbaColor[] = [
     hex: "#9A729C",
     rgb: "rgb(154, 114, 156)",
     label: "rgb(51, 51, 51)",
+    page: 210,
+    section: 6,
   },
   {
     name: "Fábula",
@@ -18241,6 +18562,8 @@ const violeta: AlbaColor[] = [
     hex: "#9E7594",
     rgb: "rgb(158, 117, 148)",
     label: "rgb(51, 51, 51)",
+    page: 211,
+    section: 5,
   },
   {
     name: "Lila Profundo",
@@ -18269,6 +18592,8 @@ const violeta: AlbaColor[] = [
     hex: "#83769B",
     rgb: "rgb(131, 118, 155)",
     label: "rgb(255, 255, 255)",
+    page: 203,
+    section: 5,
   },
   {
     name: "Lila Reluciente",
@@ -18276,6 +18601,8 @@ const violeta: AlbaColor[] = [
     hex: "#677DAD",
     rgb: "rgb(103, 125, 173)",
     label: "rgb(255, 255, 255)",
+    page: 190,
+    section: 5,
   },
   {
     name: "Arándano Jugoso",
@@ -18283,6 +18610,8 @@ const violeta: AlbaColor[] = [
     hex: "#6C7AAB",
     rgb: "rgb(108, 122, 171)",
     label: "rgb(255, 255, 255)",
+    page: 193,
+    section: 6,
   },
   {
     name: "Violeta Escocés",
@@ -18297,6 +18626,8 @@ const violeta: AlbaColor[] = [
     hex: "#85689E",
     rgb: "rgb(133, 104, 158)",
     label: "rgb(255, 255, 255)",
+    page: 204,
+    section: 6,
   },
   {
     name: "Delicias de Uva",
@@ -18304,6 +18635,8 @@ const violeta: AlbaColor[] = [
     hex: "#867091",
     rgb: "rgb(134, 112, 145)",
     label: "rgb(255, 255, 255)",
+    page: 206,
+    section: 5,
   },
   {
     name: "Deseo Púrpura",
@@ -18311,6 +18644,8 @@ const violeta: AlbaColor[] = [
     hex: "#71779E",
     rgb: "rgb(113, 119, 158)",
     label: "rgb(255, 255, 255)",
+    page: 195,
+    section: 5,
   },
   {
     name: "Uva Imperial",
@@ -18318,6 +18653,8 @@ const violeta: AlbaColor[] = [
     hex: "#7D6D99",
     rgb: "rgb(125, 109, 153)",
     label: "rgb(255, 255, 255)",
+    page: 201,
+    section: 6,
   },
   {
     name: "Ciruela Perfumada",
@@ -18339,6 +18676,8 @@ const violeta: AlbaColor[] = [
     hex: "#6F68A4",
     rgb: "rgb(111, 104, 164)",
     label: "rgb(255, 255, 255)",
+    page: 200,
+    section: 5,
   },
   {
     name: "Drama Nocturno",
@@ -18346,6 +18685,8 @@ const violeta: AlbaColor[] = [
     hex: "#68709F",
     rgb: "rgb(104, 112, 159)",
     label: "rgb(255, 255, 255)",
+    page: 194,
+    section: 6,
   },
   {
     name: "Orquídea Violeta",
@@ -18367,6 +18708,8 @@ const violeta: AlbaColor[] = [
     hex: "#7D5F7F",
     rgb: "rgb(125, 95, 127)",
     label: "rgb(255, 255, 255)",
+    page: 209,
+    section: 6,
   },
   {
     name: "Fuego Violeta",
@@ -18374,6 +18717,8 @@ const violeta: AlbaColor[] = [
     hex: "#74568C",
     rgb: "rgb(116, 86, 140)",
     label: "rgb(255, 255, 255)",
+    page: 205,
+    section: 6,
   },
   {
     name: "Ciruela Intenso",
@@ -18381,6 +18726,8 @@ const violeta: AlbaColor[] = [
     hex: "#546894",
     rgb: "rgb(84, 104, 148)",
     label: "rgb(255, 255, 255)",
+    page: 190,
+    section: 6,
   },
   {
     name: "Palacio Persa",
@@ -18388,6 +18735,8 @@ const violeta: AlbaColor[] = [
     hex: "#625894",
     rgb: "rgb(98, 88, 148)",
     label: "rgb(255, 255, 255)",
+    page: 199,
+    section: 6,
   },
   {
     name: "Joya",
@@ -18402,6 +18751,8 @@ const violeta: AlbaColor[] = [
     hex: "#5A638D",
     rgb: "rgb(90, 99, 141)",
     label: "rgb(255, 255, 255)",
+    page: 195,
+    section: 6,
   },
   {
     name: "Torbellino de Mármol",
@@ -18416,6 +18767,8 @@ const violeta: AlbaColor[] = [
     hex: "#7C4E75",
     rgb: "rgb(124, 78, 117)",
     label: "rgb(255, 255, 255)",
+    page: 211,
+    section: 6,
   },
   {
     name: "Dulce Travesura",
@@ -18423,6 +18776,8 @@ const violeta: AlbaColor[] = [
     hex: "#655A7B",
     rgb: "rgb(101, 90, 123)",
     label: "rgb(255, 255, 255)",
+    page: 203,
+    section: 6,
   },
   {
     name: "Violeta Palacio",
@@ -18430,6 +18785,8 @@ const violeta: AlbaColor[] = [
     hex: "#605088",
     rgb: "rgb(96, 80, 136)",
     label: "rgb(255, 255, 255)",
+    page: 200,
+    section: 6,
   },
   {
     name: "Decreto Real",
@@ -18437,6 +18794,8 @@ const violeta: AlbaColor[] = [
     hex: "#4A5A88",
     rgb: "rgb(74, 90, 136)",
     label: "rgb(255, 255, 255)",
+    page: 190,
+    section: 7,
   },
   {
     name: "Fiesta de Brujas",
@@ -18444,6 +18803,8 @@ const violeta: AlbaColor[] = [
     hex: "#734D6C",
     rgb: "rgb(115, 77, 108)",
     label: "rgb(255, 255, 255)",
+    page: 211,
+    section: 7,
   },
   {
     name: "Brujita",
@@ -18451,6 +18812,8 @@ const violeta: AlbaColor[] = [
     hex: "#5F507A",
     rgb: "rgb(95, 80, 122)",
     label: "rgb(255, 255, 255)",
+    page: 201,
+    section: 7,
   },
   {
     name: "Xanadu",
@@ -18472,6 +18835,8 @@ const violeta: AlbaColor[] = [
     hex: "#624B6E",
     rgb: "rgb(98, 75, 110)",
     label: "rgb(255, 255, 255)",
+    page: 206,
+    section: 7,
   },
   {
     name: "Violeta Victoriano *",
@@ -18486,6 +18851,8 @@ const violeta: AlbaColor[] = [
     hex: "#63406E",
     rgb: "rgb(99, 64, 110)",
     label: "rgb(255, 255, 255)",
+    page: 206,
+    section: 6,
   },
   {
     name: "Fruta Silvestre",
@@ -18493,6 +18860,8 @@ const violeta: AlbaColor[] = [
     hex: "#603960",
     rgb: "rgb(96, 57, 96)",
     label: "rgb(255, 255, 255)",
+    page: 210,
+    section: 7,
   },
   {
     name: "Victoria",
@@ -18500,6 +18869,8 @@ const violeta: AlbaColor[] = [
     hex: "#493F6C",
     rgb: "rgb(73, 63, 108)",
     label: "rgb(255, 255, 255)",
+    page: 199,
+    section: 7,
   },
   {
     name: "Violeta Natural",
@@ -18507,6 +18878,8 @@ const violeta: AlbaColor[] = [
     hex: "#523B64",
     rgb: "rgb(82, 59, 100)",
     label: "rgb(255, 255, 255)",
+    page: 204,
+    section: 7,
   },
   {
     name: "Licor de Mora",
@@ -18514,6 +18887,8 @@ const violeta: AlbaColor[] = [
     hex: "#573B55",
     rgb: "rgb(87, 59, 85)",
     label: "rgb(255, 255, 255)",
+    page: 209,
+    section: 7,
   },
   {
     name: "Púrpura de Windsor",
@@ -18521,6 +18896,8 @@ const violeta: AlbaColor[] = [
     hex: "#423B64",
     rgb: "rgb(66, 59, 100)",
     label: "rgb(255, 255, 255)",
+    page: 200,
+    section: 7,
   },
   {
     name: "Tulipán Negro",
@@ -18542,6 +18919,8 @@ const violeta: AlbaColor[] = [
     hex: "#324169",
     rgb: "rgb(50, 65, 105)",
     label: "rgb(255, 255, 255)",
+    page: 191,
+    section: 7,
   },
   {
     name: "Zona del Crepúsculo",
@@ -18549,6 +18928,8 @@ const violeta: AlbaColor[] = [
     hex: "#333D6B",
     rgb: "rgb(51, 61, 107)",
     label: "rgb(255, 255, 255)",
+    page: 193,
+    section: 7,
   },
   {
     name: "Mirada de Ángel",
@@ -18556,6 +18937,8 @@ const violeta: AlbaColor[] = [
     hex: "#EBE8E9",
     rgb: "rgb(235, 232, 233)",
     label: "rgb(51, 51, 51)",
+    page: 209,
+    section: 1,
   },
   {
     name: "Temporada de Nieve",
@@ -18572,6 +18955,8 @@ const violeta: AlbaColor[] = [
     hex: "#E4E5EA",
     rgb: "rgb(228, 229, 234)",
     label: "rgb(51, 51, 51)",
+    page: 196,
+    section: 1,
   },
   {
     name: "Susurro de Brezos",
@@ -18579,6 +18964,8 @@ const violeta: AlbaColor[] = [
     hex: "#E1DFE4",
     rgb: "rgb(225, 223, 228)",
     label: "rgb(51, 51, 51)",
+    page: 203,
+    section: 1,
   },
   {
     name: "Malva Galáctico",
@@ -18586,6 +18973,8 @@ const violeta: AlbaColor[] = [
     hex: "#E3DEE2",
     rgb: "rgb(227, 222, 226)",
     label: "rgb(51, 51, 51)",
+    page: 208,
+    section: 1,
   },
   {
     name: "Toque Floral",
@@ -18593,6 +18982,8 @@ const violeta: AlbaColor[] = [
     hex: "#E7DDDE",
     rgb: "rgb(231, 221, 222)",
     label: "rgb(51, 51, 51)",
+    page: 217,
+    section: 1,
   },
   {
     name: "Púrpura Místico",
@@ -18600,6 +18991,8 @@ const violeta: AlbaColor[] = [
     hex: "#DFDDE2",
     rgb: "rgb(223, 221, 226)",
     label: "rgb(51, 51, 51)",
+    page: 204,
+    section: 1,
   },
   {
     name: "Castillo de Aire",
@@ -18607,6 +19000,8 @@ const violeta: AlbaColor[] = [
     hex: "#E0DDE0",
     rgb: "rgb(224, 221, 224)",
     label: "rgb(51, 51, 51)",
+    page: 206,
+    section: 1,
   },
   {
     name: "Rocío Matinal",
@@ -18628,6 +19023,8 @@ const violeta: AlbaColor[] = [
     hex: "#DFDBDD",
     rgb: "rgb(223, 219, 221)",
     label: "rgb(51, 51, 51)",
+    page: 207,
+    section: 1,
   },
   {
     name: "Melodía Dulce",
@@ -18635,6 +19032,8 @@ const violeta: AlbaColor[] = [
     hex: "#DEDBDE",
     rgb: "rgb(222, 219, 222)",
     label: "rgb(51, 51, 51)",
+    page: 202,
+    section: 2,
   },
   {
     name: "Polvo de Diamantes",
@@ -18642,6 +19041,8 @@ const violeta: AlbaColor[] = [
     hex: "#DDDBDC",
     rgb: "rgb(221, 219, 220)",
     label: "rgb(51, 51, 51)",
+    page: 197,
+    section: 1,
   },
   {
     name: "Orquídea Vigorosa",
@@ -18649,6 +19050,8 @@ const violeta: AlbaColor[] = [
     hex: "#DAD2D8",
     rgb: "rgb(218, 210, 216)",
     label: "rgb(51, 51, 51)",
+    page: 208,
+    section: 2,
   },
   {
     name: "Violeta Perfumada",
@@ -18670,6 +19073,8 @@ const violeta: AlbaColor[] = [
     hex: "#D3D0D6",
     rgb: "rgb(211, 208, 214)",
     label: "rgb(51, 51, 51)",
+    page: 207,
+    section: 2,
   },
   {
     name: "Pico Sereno",
@@ -18677,6 +19082,8 @@ const violeta: AlbaColor[] = [
     hex: "#D5CFD4",
     rgb: "rgb(213, 207, 212)",
     label: "rgb(51, 51, 51)",
+    page: 208,
+    section: 3,
   },
   {
     name: "Violeta Vogue",
@@ -18684,6 +19091,8 @@ const violeta: AlbaColor[] = [
     hex: "#D1D1D6",
     rgb: "rgb(209, 209, 214)",
     label: "rgb(51, 51, 51)",
+    page: 197,
+    section: 2,
   },
   {
     name: "Digitalis",
@@ -18712,6 +19121,8 @@ const violeta: AlbaColor[] = [
     hex: "#C2C7D6",
     rgb: "rgb(194, 199, 214)",
     label: "rgb(51, 51, 51)",
+    page: 190,
+    section: 2,
   },
   {
     name: "Toque de Armonía",
@@ -18747,6 +19158,8 @@ const violeta: AlbaColor[] = [
     hex: "#BEB9C5",
     rgb: "rgb(190, 185, 197)",
     label: "rgb(51, 51, 51)",
+    page: 202,
+    section: 4,
   },
   {
     name: "Canción de la Ciudad",
@@ -18754,6 +19167,8 @@ const violeta: AlbaColor[] = [
     hex: "#B8B9C8",
     rgb: "rgb(184, 185, 200)",
     label: "rgb(51, 51, 51)",
+    page: 196,
+    section: 4,
   },
   {
     name: "Malva Plateada",
@@ -18761,6 +19176,8 @@ const violeta: AlbaColor[] = [
     hex: "#BFB6BF",
     rgb: "rgb(191, 182, 191)",
     label: "rgb(51, 51, 51)",
+    page: 208,
+    section: 4,
   },
   {
     name: "Flor Salvaje",
@@ -18771,17 +19188,12 @@ const violeta: AlbaColor[] = [
   },
   {
     name: "Vergel Violeta",
-    code: "",
-    hex: "#BCB6BD",
-    rgb: "rgb(188, 182, 189)",
-    label: "rgb(51, 51, 51)",
-  },
-  {
-    name: "Vergel Violeta",
     code: "50RB 48/051",
     hex: "#BCB6BD",
     rgb: "rgb(188, 182, 189)",
     label: "rgb(51, 51, 51)",
+    page: 207,
+    section: 3,
   },
   {
     name: "Lila Agrisado",
@@ -18810,6 +19222,8 @@ const violeta: AlbaColor[] = [
     hex: "#B2AFBB",
     rgb: "rgb(178, 175, 187)",
     label: "rgb(51, 51, 51)",
+    page: 197,
+    section: 3,
   },
   {
     name: "Otoño Brumoso",
@@ -18838,6 +19252,8 @@ const violeta: AlbaColor[] = [
     hex: "#A29BA6",
     rgb: "rgb(162, 155, 166)",
     label: "rgb(51, 51, 51)",
+    page: 207,
+    section: 4,
   },
   {
     name: "Helado de Mora",
@@ -18852,6 +19268,8 @@ const violeta: AlbaColor[] = [
     hex: "#9A95A6",
     rgb: "rgb(154, 149, 166)",
     label: "rgb(51, 51, 51)",
+    page: 202,
+    section: 5,
   },
   {
     name: "Violeta Antiguo",
@@ -18859,6 +19277,8 @@ const violeta: AlbaColor[] = [
     hex: "#9194AB",
     rgb: "rgb(145, 148, 171)",
     label: "rgb(51, 51, 51)",
+    page: 196,
+    section: 5,
   },
   {
     name: "Paz Nocturna",
@@ -18866,6 +19286,8 @@ const violeta: AlbaColor[] = [
     hex: "#9E919F",
     rgb: "rgb(158, 145, 159)",
     label: "rgb(51, 51, 51)",
+    page: 208,
+    section: 5,
   },
   {
     name: "Violeta Fantástica",
@@ -18873,6 +19295,8 @@ const violeta: AlbaColor[] = [
     hex: "#9693A1",
     rgb: "rgb(150, 147, 161)",
     label: "rgb(51, 51, 51)",
+    page: 197,
+    section: 4,
   },
   {
     name: "Dejo de Arcilla",
@@ -18915,6 +19339,8 @@ const violeta: AlbaColor[] = [
     hex: "#7F7685",
     rgb: "rgb(127, 118, 133)",
     label: "rgb(255, 255, 255)",
+    page: 207,
+    section: 5,
   },
   {
     name: "Musgo Púrpura",
@@ -18936,6 +19362,8 @@ const violeta: AlbaColor[] = [
     hex: "#6E718E",
     rgb: "rgb(110, 113, 142)",
     label: "rgb(255, 255, 255)",
+    page: 196,
+    section: 6,
   },
   {
     name: "Reflejo de Amatista",
@@ -18943,6 +19371,8 @@ const violeta: AlbaColor[] = [
     hex: "#7D6D7E",
     rgb: "rgb(125, 109, 126)",
     label: "rgb(255, 255, 255)",
+    page: 208,
+    section: 6,
   },
   {
     name: "Helado de Ciruela",
@@ -18957,6 +19387,8 @@ const violeta: AlbaColor[] = [
     hex: "#6C698D",
     rgb: "rgb(108, 105, 141)",
     label: "rgb(255, 255, 255)",
+    page: 198,
+    section: 5,
   },
   {
     name: "Pinot Noir",
@@ -18964,6 +19396,8 @@ const violeta: AlbaColor[] = [
     hex: "#6F6C81",
     rgb: "rgb(111, 108, 129)",
     label: "rgb(255, 255, 255)",
+    page: 197,
+    section: 5,
   },
   {
     name: "Serenata Española",
@@ -18971,6 +19405,8 @@ const violeta: AlbaColor[] = [
     hex: "#70677F",
     rgb: "rgb(112, 103, 127)",
     label: "rgb(255, 255, 255)",
+    page: 202,
+    section: 6,
   },
   {
     name: "Amatista Gris",
@@ -19006,6 +19442,8 @@ const violeta: AlbaColor[] = [
     hex: "#675C6D",
     rgb: "rgb(103, 92, 109)",
     label: "rgb(255, 255, 255)",
+    page: 207,
+    section: 6,
   },
   {
     name: "Lluvia de Mercurio",
@@ -19020,6 +19458,8 @@ const violeta: AlbaColor[] = [
     hex: "#5A4D70",
     rgb: "rgb(90, 77, 112)",
     label: "rgb(255, 255, 255)",
+    page: 203,
+    section: 7,
   },
   {
     name: "Dramático",
@@ -19027,6 +19467,8 @@ const violeta: AlbaColor[] = [
     hex: "#534F74",
     rgb: "rgb(83, 79, 116)",
     label: "rgb(255, 255, 255)",
+    page: 198,
+    section: 6,
   },
   {
     name: "Fulgor de Medianoche",
@@ -19034,6 +19476,8 @@ const violeta: AlbaColor[] = [
     hex: "#585568",
     rgb: "rgb(88, 85, 104)",
     label: "rgb(255, 255, 255)",
+    page: 197,
+    section: 6,
   },
   {
     name: "Enmascarado",
@@ -19055,6 +19499,8 @@ const violeta: AlbaColor[] = [
     hex: "#514961",
     rgb: "rgb(81, 73, 97)",
     label: "rgb(255, 255, 255)",
+    page: 202,
+    section: 7,
   },
   {
     name: "Púrpura Romano",
@@ -19069,6 +19515,8 @@ const violeta: AlbaColor[] = [
     hex: "#55455E",
     rgb: "rgb(85, 69, 94)",
     label: "rgb(255, 255, 255)",
+    page: 205,
+    section: 7,
   },
   {
     name: "Berenjena Intenso",
@@ -19076,6 +19524,8 @@ const violeta: AlbaColor[] = [
     hex: "#4E4653",
     rgb: "rgb(78, 70, 83)",
     label: "rgb(255, 255, 255)",
+    page: 207,
+    section: 7,
   },
   {
     name: "Tapiz Renacentista",
@@ -19090,6 +19540,8 @@ const violeta: AlbaColor[] = [
     hex: "#533F4F",
     rgb: "rgb(83, 63, 79)",
     label: "rgb(255, 255, 255)",
+    page: 208,
+    section: 7,
   },
   {
     name: "Meditación Púrpura",
@@ -19097,6 +19549,8 @@ const violeta: AlbaColor[] = [
     hex: "#444258",
     rgb: "rgb(68, 66, 88)",
     label: "rgb(255, 255, 255)",
+    page: 198,
+    section: 7,
   },
   {
     name: "Tesoro del Rey",
@@ -19104,6 +19558,8 @@ const violeta: AlbaColor[] = [
     hex: "#343E61",
     rgb: "rgb(52, 62, 97)",
     label: "rgb(255, 255, 255)",
+    page: 195,
+    section: 7,
   },
   {
     name: "Torta Selva Negra",
@@ -19111,6 +19567,8 @@ const violeta: AlbaColor[] = [
     hex: "#3C3A48",
     rgb: "rgb(60, 58, 72)",
     label: "rgb(255, 255, 255)",
+    page: 197,
+    section: 7,
   },
   {
     name: "Arcilla Relajante",
@@ -21237,6 +21695,8 @@ const neutrosCalidos: AlbaColor[] = [
     hex: "#E9E8E8",
     rgb: "rgb(233, 232, 232)",
     label: "rgb(51, 51, 51)",
+    page: 202,
+    section: 1,
   },
   {
     name: "Calma Matutina",
@@ -21513,6 +21973,8 @@ const neutrosCalidos: AlbaColor[] = [
     hex: "#E2E5E6",
     rgb: "rgb(226, 229, 230)",
     label: "rgb(51, 51, 51)",
+    page: 188,
+    section: 1,
   },
   {
     name: "Papel Valioso",
@@ -21538,6 +22000,8 @@ const neutrosCalidos: AlbaColor[] = [
     hex: "#DFE2E7",
     rgb: "rgb(223, 226, 231)",
     label: "rgb(51, 51, 51)",
+    page: 193,
+    section: 1,
   },
   {
     name: "Blanco Antiguo",
@@ -21647,6 +22111,8 @@ const neutrosCalidos: AlbaColor[] = [
     hex: "#DBDDE0",
     rgb: "rgb(219, 221, 224)",
     label: "rgb(51, 51, 51)",
+    page: 189,
+    section: 1,
   },
   {
     name: "Onda Acústica",
@@ -22006,5 +22472,23 @@ export const ducplicatedOnTaco: AlbaColor[] = [
     label: "rgb(51, 51, 51)",
     page: 113,
     section: 1,
+  },
+  {
+    name: "Amatista Difusa",
+    code: "70BB 73/030",
+    hex: "#DBDDE0",
+    rgb: "rgb(219, 221, 224)",
+    label: "rgb(51, 51, 51)",
+    page: 196,
+    section: 2,
+  },
+  {
+    name: "Mezcla Púrpura",
+    code: "16RB 38/235",
+    hex: "#A79DC8",
+    rgb: "rgb(167, 157, 200)",
+    label: "rgb(51, 51, 51)",
+    page: 201,
+    section: 5,
   },
 ];
